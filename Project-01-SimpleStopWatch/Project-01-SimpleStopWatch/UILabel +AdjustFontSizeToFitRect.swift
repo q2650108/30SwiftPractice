@@ -28,6 +28,7 @@ extension UILabel {
         let constraintSize = CGSize(width: rect.width, height: CGFloat.max)
         
         while(p <= q){
+            
             let currentSize = (p + q) / 2
             font = font.fontWithSize( CGFloat(currentSize) )
             let text = NSAttributedString(string: self.text!, attributes: [NSFontAttributeName:font])
@@ -35,6 +36,9 @@ extension UILabel {
             
             let labelSize = textRect.size
             
+            // 持續利用labelSize 與 現在 UILabel Frame 比較
+            // 符合在 frame.height and frame.height-10  以及 寬度 後 才跳離
+            // 否則修正 currentSize
             if labelSize.height < frame.height && labelSize.height >= frame.height-10 && labelSize.width < frame.width && labelSize.width >= frame.width-10 {
                 break
             }else if labelSize.height > frame.height || labelSize.width > frame.width{

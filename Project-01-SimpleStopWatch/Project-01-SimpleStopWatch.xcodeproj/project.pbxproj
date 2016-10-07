@@ -56,15 +56,31 @@
 		2442E4351DA5DF6B00BB82FD /* Project-01-SimpleStopWatch */ = {
 			isa = PBXGroup;
 			children = (
+				2442E46B1DA748DD00BB82FD /* UTL */,
 				2442E4361DA5DF6B00BB82FD /* AppDelegate.swift */,
 				2442E4381DA5DF6B00BB82FD /* ViewController.swift */,
 				2442E43A1DA5DF6B00BB82FD /* Main.storyboard */,
 				2442E43D1DA5DF6B00BB82FD /* Assets.xcassets */,
 				2442E43F1DA5DF6B00BB82FD /* LaunchScreen.storyboard */,
 				2442E4421DA5DF6B00BB82FD /* Info.plist */,
-				2442E4481DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift */,
 			);
 			path = "Project-01-SimpleStopWatch";
+			sourceTree = "<group>";
+		};
+		2442E46A1DA748C900BB82FD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2442E4481DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		2442E46B1DA748DD00BB82FD /* UTL */ = {
+			isa = PBXGroup;
+			children = (
+				2442E46A1DA748C900BB82FD /* Extension */,
+			);
+			name = UTL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -49,8 +49,7 @@ class ViewController: UIViewController {
     }
     
     deinit{
-        // Remove Observer
-        //NSNotificationCenter.defaultCenter().removeObserver(self)
+
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
@@ -75,8 +74,6 @@ class ViewController: UIViewController {
     ////////////////////////////////
     
     private func initUI(){
-        // Add Observer Screen Rotated
-//        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(self.screenRotated), name: UIDeviceOrientationDidChangeNotification, object: nil)
     }
     
     private func setUI(){
@@ -84,20 +81,6 @@ class ViewController: UIViewController {
         LabelTime.adjustFontSizeToFitRect(LabelTime.frame)
         ButtonReset.titleLabel!.adjustFontSizeToFitRect(ButtonReset.frame)
     }
-    
-//    @objc private func screenRotated()
-//    {
-//        if(UIDeviceOrientationIsLandscape(UIDevice.currentDevice().orientation))
-//        {
-//            print("rotated landscape")
-//        }
-//        
-//        if(UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation))
-//        {
-//            print("rotated Portrait")
-//        }
-//        
-//    }
     
     //////////////////////////////////
     //      Public Func            //
