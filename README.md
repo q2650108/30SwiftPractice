@@ -18,12 +18,12 @@ Thanks for your watching and help.
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project-01-SimpleStopWatch/1_2.gif?raw=true)
 
 
-```javascript
-what did i learn from this practice
 ```
-
+what did i learn from this practice ? 
+ 
  * Size Classes
  * NSTimer
  * NSAttributedString
+```
  
  ### Project 02 
