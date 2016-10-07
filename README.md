@@ -26,6 +26,20 @@ what did i learn from this practice ?
  * NSAttributedString
 ```
  
-### Project 02 - 
+### Project 02 -  [CustomFont](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2002%20-%20CustomFont)
 
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2002%20-%20CustomFont/2_1.gif?raw=true)
+<br />
+
+
+```
+what did i learn from this practice ? 
+ 
+ * Add Custom Fomts in Project , and use it.
+ * Create the Circular UIView.
+ * Add a Scroll View.
+ * Change the Status Bar Style.
+```
+ 
+### Project 03 - 
 
