@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     /// count the time
     private var time : Float = 0.0
     
-    /// Swith the Timer On or Off
+    /// Switch the Timer On or Off
     private var isTimerOn : Bool = false
     
     //////////////////////////////////
