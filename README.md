@@ -32,3 +32,14 @@ what did i learn from this practice ?
 <br />
 
 
+```
+what did i learn from this practice ? 
+ 
+ * Add Custom Fomts in Project , and use it.
+ * Create the Circular UIView.
+ * Add a Scroll View.
+ * Change the Status Bar Style.
+```
+ 
+### Project 03 - 
+
