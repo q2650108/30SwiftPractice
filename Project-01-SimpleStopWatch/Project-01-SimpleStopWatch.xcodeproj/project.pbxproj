@@ -12,7 +12,6 @@
 		2442E43C1DA5DF6B00BB82FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442E43A1DA5DF6B00BB82FD /* Main.storyboard */; };
 		2442E43E1DA5DF6B00BB82FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2442E43D1DA5DF6B00BB82FD /* Assets.xcassets */; };
 		2442E4411DA5DF6B00BB82FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2442E43F1DA5DF6B00BB82FD /* LaunchScreen.storyboard */; };
-		2442E4491DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2442E4481DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +22,6 @@
 		2442E43D1DA5DF6B00BB82FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2442E4401DA5DF6B00BB82FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2442E4421DA5DF6B00BB82FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2442E4481DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel +AdjustFontSizeToFitRect.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 		2442E4351DA5DF6B00BB82FD /* Project-01-SimpleStopWatch */ = {
 			isa = PBXGroup;
 			children = (
-				2442E46B1DA748DD00BB82FD /* UTL */,
 				2442E4361DA5DF6B00BB82FD /* AppDelegate.swift */,
 				2442E4381DA5DF6B00BB82FD /* ViewController.swift */,
 				2442E43A1DA5DF6B00BB82FD /* Main.storyboard */,
@@ -65,22 +62,6 @@
 				2442E4421DA5DF6B00BB82FD /* Info.plist */,
 			);
 			path = "Project-01-SimpleStopWatch";
-			sourceTree = "<group>";
-		};
-		2442E46A1DA748C900BB82FD /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2442E4481DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift */,
-			);
-			name = Extension;
-			sourceTree = "<group>";
-		};
-		2442E46B1DA748DD00BB82FD /* UTL */ = {
-			isa = PBXGroup;
-			children = (
-				2442E46A1DA748C900BB82FD /* Extension */,
-			);
-			name = UTL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +136,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2442E4491DA6267000BB82FD /* UILabel +AdjustFontSizeToFitRect.swift in Sources */,
 				2442E4391DA5DF6B00BB82FD /* ViewController.swift in Sources */,
 				2442E4371DA5DF6B00BB82FD /* AppDelegate.swift in Sources */,
 			);

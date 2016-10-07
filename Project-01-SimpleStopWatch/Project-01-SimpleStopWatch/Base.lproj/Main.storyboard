@@ -22,15 +22,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-iF-d3q" userLabel="ViewTop">
                                 <rect key="frame" x="0.0" y="20" width="600" height="180"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1n-Mr-Hgg" userLabel="LabelTime">
-                                        <rect key="frame" x="255" y="45" width="90" height="90"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="l1n-Mr-Hgg" secondAttribute="height" multiplier="1.5:1" id="VNC-Nw-9kt"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGq-ox-OcD" userLabel="ButtonReset">
                                         <rect key="frame" x="490" y="20" width="90" height="45"/>
                                         <constraints>
@@ -52,7 +43,16 @@
                                                 <include reference="pde-ro-s1E"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="ButtonResetTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWe-Gj-Hda"/>
+                                        </connections>
                                     </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1n-Mr-Hgg" userLabel="LabelTime">
+                                        <rect key="frame" x="0.0" y="45" width="600" height="90"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -60,6 +60,7 @@
                                     <constraint firstItem="TGq-ox-OcD" firstAttribute="width" secondItem="tjC-iF-d3q" secondAttribute="width" multiplier="0.15" id="9LD-cg-HZl"/>
                                     <constraint firstAttribute="trailing" secondItem="TGq-ox-OcD" secondAttribute="trailing" constant="20" id="AMX-aN-bu0"/>
                                     <constraint firstItem="l1n-Mr-Hgg" firstAttribute="height" secondItem="tjC-iF-d3q" secondAttribute="height" multiplier="0.7" id="HzA-9I-LA3"/>
+                                    <constraint firstItem="l1n-Mr-Hgg" firstAttribute="width" secondItem="tjC-iF-d3q" secondAttribute="width" id="Lf2-19-qtz"/>
                                     <constraint firstAttribute="trailing" secondItem="TGq-ox-OcD" secondAttribute="trailing" constant="20" id="SDU-tV-fsb">
                                         <variation key="heightClass=compact" constant="15"/>
                                     </constraint>
@@ -104,6 +105,10 @@
                                             <constraint firstAttribute="width" secondItem="58Q-5K-iqU" secondAttribute="height" multiplier="1:1" id="jyN-Nt-Os4"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Pause-50"/>
+                                        <state key="highlighted" backgroundImage="Pause-50_pressed"/>
+                                        <connections>
+                                            <action selector="ButtonPauseTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEC-SX-M8X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,6 +143,10 @@
                                             <constraint firstAttribute="width" secondItem="RMy-dj-knQ" secondAttribute="height" multiplier="1:1" id="DzG-p8-Hpn"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Play-50"/>
+                                        <state key="highlighted" backgroundImage="Play-50_pressd"/>
+                                        <connections>
+                                            <action selector="ButtonStartTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnd-3V-19E"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -220,6 +229,8 @@
     </scenes>
     <resources>
         <image name="Pause-50" width="50" height="50"/>
+        <image name="Pause-50_pressed" width="50" height="50"/>
         <image name="Play-50" width="50" height="50"/>
+        <image name="Play-50_pressd" width="50" height="50"/>
     </resources>
 </document>
