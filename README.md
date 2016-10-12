@@ -41,5 +41,21 @@ what did i learn from this practice ?
  * Change the Status Bar Style.
 ```
  
-### Project 03 - 
+### Project 03 - [PlayLocalVideo](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2003%20-%20Play%20Local%20Video)
 
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2003%20-%20Play%20Local%20Video/3_1.gif?raw=true)
+<br />
+
+
+```
+what did i learn from this practice ? 
+ 
+ * UINavigationControllerDelegate - didShowViewController 
+ * NavigationController - hidesBarsOnSwipe
+ * TableViewController - self size cell
+ * Custom TableViewCell 
+ * AVPlayer
+ * use the NSNotificationCenter to detect the AVPlayer Did Finish Playing
+```
+
+### Project 04 - 
