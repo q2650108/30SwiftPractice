@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7za-66-lqX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Watch Later-->
+        <scene sceneID="Bnv-bT-R4v">
+            <objects>
+                <tableViewController storyboardIdentifier="TableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fbH-NF-8wZ" customClass="TableViewController" customModule="Project_03___Play_Local_Video" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2lG-lf-tjz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" id="bc1-Yr-hNO" customClass="TableViewCell" customModule="Project_03___Play_Local_Video" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bc1-Yr-hNO" id="B8j-oq-O6e">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Computer" translatesAutoresizingMaskIntoConstraints="NO" id="8fb-iP-J4V" userLabel="ImageViewBackground">
+                                            <rect key="frame" x="-20" y="0.0" width="640" height="640"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="8fb-iP-J4V" secondAttribute="height" id="UJJ-86-QKd"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCj-Bf-lyV" userLabel="ButtonPlay">
+                                            <rect key="frame" x="202" y="256" width="196" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="yCj-Bf-lyV" secondAttribute="height" multiplier="23:15" id="NMH-xD-ODD"/>
+                                            </constraints>
+                                            <state key="normal" image="play_alt"/>
+                                            <state key="highlighted" image="playBtn_press"/>
+                                            <connections>
+                                                <action selector="ButtonPlayTouchUpInside:" destination="bc1-Yr-hNO" eventType="touchUpInside" id="R0u-mk-cfc"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-to-R0r" userLabel="LabelContainer">
+                                            <rect key="frame" x="210" y="547" width="180" height="23"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-oo-jcd" userLabel="LabelTitle">
+                                                    <rect key="frame" x="0.0" y="0.0" width="180" height="23"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="fb1-oo-jcd" firstAttribute="centerY" secondItem="Nfj-to-R0r" secondAttribute="centerY" id="Cis-cj-q0w"/>
+                                                <constraint firstItem="fb1-oo-jcd" firstAttribute="centerX" secondItem="Nfj-to-R0r" secondAttribute="centerX" id="Oqg-ij-3D9"/>
+                                                <constraint firstItem="fb1-oo-jcd" firstAttribute="height" secondItem="Nfj-to-R0r" secondAttribute="height" id="UHK-KV-IUA"/>
+                                                <constraint firstItem="fb1-oo-jcd" firstAttribute="width" secondItem="Nfj-to-R0r" secondAttribute="width" id="Z6a-Ui-cHP"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yCj-Bf-lyV" firstAttribute="height" secondItem="B8j-oq-O6e" secondAttribute="height" multiplier="0.2" id="4VK-ys-Qhf"/>
+                                        <constraint firstItem="8fb-iP-J4V" firstAttribute="height" secondItem="B8j-oq-O6e" secondAttribute="height" id="4pS-yb-nzG"/>
+                                        <constraint firstItem="8fb-iP-J4V" firstAttribute="width" secondItem="B8j-oq-O6e" secondAttribute="width" id="Agj-Vi-9pD"/>
+                                        <constraint firstItem="Nfj-to-R0r" firstAttribute="bottom" secondItem="B8j-oq-O6e" secondAttribute="bottomMargin" multiplier="0.9" constant="1" id="Euk-eH-jkZ"/>
+                                        <constraint firstItem="Nfj-to-R0r" firstAttribute="centerX" secondItem="B8j-oq-O6e" secondAttribute="centerX" id="QSv-4b-8EW"/>
+                                        <constraint firstItem="yCj-Bf-lyV" firstAttribute="centerY" secondItem="B8j-oq-O6e" secondAttribute="centerY" id="RQ7-7X-QsI"/>
+                                        <constraint firstItem="8fb-iP-J4V" firstAttribute="centerY" secondItem="B8j-oq-O6e" secondAttribute="centerY" id="Y4v-Sb-sq1"/>
+                                        <constraint firstItem="8fb-iP-J4V" firstAttribute="centerX" secondItem="B8j-oq-O6e" secondAttribute="centerX" id="jte-x2-C87"/>
+                                        <constraint firstItem="yCj-Bf-lyV" firstAttribute="centerX" secondItem="B8j-oq-O6e" secondAttribute="centerX" id="kbr-Qy-ijq"/>
+                                        <constraint firstItem="Nfj-to-R0r" firstAttribute="width" secondItem="B8j-oq-O6e" secondAttribute="width" multiplier="0.3" id="siw-lx-vSq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ButtonPlay" destination="yCj-Bf-lyV" id="sWH-BR-q0m"/>
+                                    <outlet property="ImageViewBackground" destination="8fb-iP-J4V" id="jHd-gt-qcf"/>
+                                    <outlet property="LabelTitle" destination="fb1-oo-jcd" id="7eR-Aj-tkr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fbH-NF-8wZ" id="McI-XA-9d1"/>
+                            <outlet property="delegate" destination="fbH-NF-8wZ" id="Gjd-TJ-ZV6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Watch Later" id="5sR-HI-48W"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XA4-a3-SOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1165" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VR0-h1-EVf">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7za-66-lqX" customClass="NavigationController" customModule="Project_03___Play_Local_Video" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="7oc-Qf-Ihe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="fbH-NF-8wZ" kind="relationship" relationship="rootViewController" id="het-K7-tLO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ho4-fw-OmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Computer" width="640" height="360"/>
+        <image name="playBtn_press" width="60" height="60"/>
+        <image name="play_alt" width="64" height="64"/>
+    </resources>
+</document>
