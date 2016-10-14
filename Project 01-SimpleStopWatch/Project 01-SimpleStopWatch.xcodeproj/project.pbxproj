@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2442E4331DA5DF6B00BB82FD /* Project-01-SimpleStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-01-SimpleStopWatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2442E4331DA5DF6B00BB82FD /* Project 01-SimpleStopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 01-SimpleStopWatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2442E4361DA5DF6B00BB82FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2442E4381DA5DF6B00BB82FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2442E43B1DA5DF6B00BB82FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		2442E42A1DA5DF6B00BB82FD = {
 			isa = PBXGroup;
 			children = (
-				2442E4351DA5DF6B00BB82FD /* Project-01-SimpleStopWatch */,
+				2442E4351DA5DF6B00BB82FD /* Project 01-SimpleStopWatch */,
 				2442E4341DA5DF6B00BB82FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		2442E4341DA5DF6B00BB82FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2442E4331DA5DF6B00BB82FD /* Project-01-SimpleStopWatch.app */,
+				2442E4331DA5DF6B00BB82FD /* Project 01-SimpleStopWatch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2442E4351DA5DF6B00BB82FD /* Project-01-SimpleStopWatch */ = {
+		2442E4351DA5DF6B00BB82FD /* Project 01-SimpleStopWatch */ = {
 			isa = PBXGroup;
 			children = (
 				2442E4361DA5DF6B00BB82FD /* AppDelegate.swift */,
@@ -61,15 +61,16 @@
 				2442E43F1DA5DF6B00BB82FD /* LaunchScreen.storyboard */,
 				2442E4421DA5DF6B00BB82FD /* Info.plist */,
 			);
+			name = "Project 01-SimpleStopWatch";
 			path = "Project-01-SimpleStopWatch";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2442E4321DA5DF6B00BB82FD /* Project-01-SimpleStopWatch */ = {
+		2442E4321DA5DF6B00BB82FD /* Project 01-SimpleStopWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2442E4451DA5DF6B00BB82FD /* Build configuration list for PBXNativeTarget "Project-01-SimpleStopWatch" */;
+			buildConfigurationList = 2442E4451DA5DF6B00BB82FD /* Build configuration list for PBXNativeTarget "Project 01-SimpleStopWatch" */;
 			buildPhases = (
 				2442E42F1DA5DF6B00BB82FD /* Sources */,
 				2442E4301DA5DF6B00BB82FD /* Frameworks */,
@@ -79,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "Project-01-SimpleStopWatch";
+			name = "Project 01-SimpleStopWatch";
 			productName = "Project-01-SimpleStopWatch";
-			productReference = 2442E4331DA5DF6B00BB82FD /* Project-01-SimpleStopWatch.app */;
+			productReference = 2442E4331DA5DF6B00BB82FD /* Project 01-SimpleStopWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2442E42E1DA5DF6B00BB82FD /* Build configuration list for PBXProject "Project-01-SimpleStopWatch" */;
+			buildConfigurationList = 2442E42E1DA5DF6B00BB82FD /* Build configuration list for PBXProject "Project 01-SimpleStopWatch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -113,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2442E4321DA5DF6B00BB82FD /* Project-01-SimpleStopWatch */,
+				2442E4321DA5DF6B00BB82FD /* Project 01-SimpleStopWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +256,7 @@
 				INFOPLIST_FILE = "Project-01-SimpleStopWatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.q2650108.Project01SimpleStopWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 01-SimpleStopWatch";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -269,7 +270,7 @@
 				INFOPLIST_FILE = "Project-01-SimpleStopWatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.q2650108.Project01SimpleStopWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Project 01-SimpleStopWatch";
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -277,7 +278,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2442E42E1DA5DF6B00BB82FD /* Build configuration list for PBXProject "Project-01-SimpleStopWatch" */ = {
+		2442E42E1DA5DF6B00BB82FD /* Build configuration list for PBXProject "Project 01-SimpleStopWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2442E4431DA5DF6B00BB82FD /* Debug */,
@@ -286,7 +287,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2442E4451DA5DF6B00BB82FD /* Build configuration list for PBXNativeTarget "Project-01-SimpleStopWatch" */ = {
+		2442E4451DA5DF6B00BB82FD /* Build configuration list for PBXNativeTarget "Project 01-SimpleStopWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2442E4461DA5DF6B00BB82FD /* Debug */,
