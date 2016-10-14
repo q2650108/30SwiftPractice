@@ -10,12 +10,12 @@ Thanks for your watching and help.
 
 ## Project Index & GIF Showcase ##
 
-### Project 01 - [SimpleStopWatch](https://github.com/q2650108/30SwiftPractice/tree/master/Project-01-SimpleStopWatch)
+### Project 01 - [SimpleStopWatch](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2001%20-%20SimpleStopWatch)
 
-![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project-01-SimpleStopWatch/1_1.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2001%20-%20SimpleStopWatch/1_1.gif?raw=true)
 <br />
 <br />
-![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project-01-SimpleStopWatch/1_2.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2001%20-%20SimpleStopWatch/1_2.gif?raw=true)
 
 
 ```
