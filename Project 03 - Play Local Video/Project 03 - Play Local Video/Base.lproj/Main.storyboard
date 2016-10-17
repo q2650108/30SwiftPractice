@@ -24,13 +24,13 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Computer" translatesAutoresizingMaskIntoConstraints="NO" id="8fb-iP-J4V" userLabel="ImageViewBackground">
+                                        <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Computer" translatesAutoresizingMaskIntoConstraints="NO" id="8fb-iP-J4V" userLabel="imageViewBackground">
                                             <rect key="frame" x="-20" y="0.0" width="640" height="640"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="8fb-iP-J4V" secondAttribute="height" id="UJJ-86-QKd"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCj-Bf-lyV" userLabel="ButtonPlay">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCj-Bf-lyV" userLabel="buttonPlay">
                                             <rect key="frame" x="202" y="256" width="196" height="128"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="yCj-Bf-lyV" secondAttribute="height" multiplier="23:15" id="NMH-xD-ODD"/>
@@ -38,13 +38,13 @@
                                             <state key="normal" image="play_alt"/>
                                             <state key="highlighted" image="playBtn_press"/>
                                             <connections>
-                                                <action selector="ButtonPlayTouchUpInside:" destination="bc1-Yr-hNO" eventType="touchUpInside" id="R0u-mk-cfc"/>
+                                                <action selector="buttonPlayTouchUpInside:" destination="bc1-Yr-hNO" eventType="touchUpInside" id="u4a-h1-6rU"/>
                                             </connections>
                                         </button>
-                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-to-R0r" userLabel="LabelContainer">
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfj-to-R0r" userLabel="labelContainer">
                                             <rect key="frame" x="210" y="547" width="180" height="23"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-oo-jcd" userLabel="LabelTitle">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fb1-oo-jcd" userLabel="labelTitle">
                                                     <rect key="frame" x="0.0" y="0.0" width="180" height="23"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -74,9 +74,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="ButtonPlay" destination="yCj-Bf-lyV" id="sWH-BR-q0m"/>
-                                    <outlet property="ImageViewBackground" destination="8fb-iP-J4V" id="jHd-gt-qcf"/>
-                                    <outlet property="LabelTitle" destination="fb1-oo-jcd" id="7eR-Aj-tkr"/>
+                                    <outlet property="buttonPlay" destination="yCj-Bf-lyV" id="Ui3-ww-ADu"/>
+                                    <outlet property="imageViewBackground" destination="8fb-iP-J4V" id="rec-JR-5BZ"/>
+                                    <outlet property="labelTitle" destination="fb1-oo-jcd" id="HZz-7L-Hgh"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
