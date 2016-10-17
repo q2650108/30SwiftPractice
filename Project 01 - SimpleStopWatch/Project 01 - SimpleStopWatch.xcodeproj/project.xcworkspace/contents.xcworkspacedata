@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/kinpomis/Desktop/30SwiftPractice/Project 01-SimpleStopWatch/Project 01 - SimpleStopWatch.xcodeproj">
+      location = "self:Project 01 - SimpleStopWatch.xcodeproj">
    </FileRef>
 </Workspace>

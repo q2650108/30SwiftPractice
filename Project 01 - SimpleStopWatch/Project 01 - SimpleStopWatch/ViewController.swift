@@ -34,16 +34,16 @@ class ViewController: UIViewController {
     ////////////////////////////////
     
     /// Display the Current Time
-    @IBOutlet weak var LabelTime: UILabel!
+    @IBOutlet weak var labelTime: UILabel!
     
     /// Reset the Time
-    @IBOutlet weak var ButtonReset: UIButton!
+    @IBOutlet weak var buttonReset: UIButton!
     
     /// Start or continue the Time
-    @IBOutlet weak var ButtonStart: UIButton!
+    @IBOutlet weak var buttonStart: UIButton!
     
     /// Pause th Time
-    @IBOutlet weak var ButtonPause: UIButton!
+    @IBOutlet weak var buttonPause: UIButton!
     
     //////////////////////////////////
     //      Life Cycle             //
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func ButtonStartTouchUpInside(sender: AnyObject) {
+    @IBAction func buttonStartTouchUpInside(sender: AnyObject) {
         // Timer On
         
         if let _ = timer {
@@ -89,18 +89,18 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func ButtonPauseTouchUpInside(sender: AnyObject) {
+    @IBAction func buttonPauseTouchUpInside(sender: AnyObject) {
         // Timer Off
         isTimerOn = false
     }
     
-    @IBAction func ButtonResetTouchUpInside(sender: AnyObject) {
+    @IBAction func buttonResetTouchUpInside(sender: AnyObject) {
         
         stopTiemr()
         
         // Reset the Time
         time = 0.0
-        LabelTime.text = "\(time)"
+        labelTime.text = "\(time)"
     }
     
     //////////////////////////////////
@@ -127,7 +127,7 @@ class ViewController: UIViewController {
             // fix time += 0.1 Display some wrong value
             // ex: 8.0999
             let value =  round(10 * time) / 10
-            LabelTime.text = "\(value)"
+            labelTime.text = "\(value)"
         }
     }
     
