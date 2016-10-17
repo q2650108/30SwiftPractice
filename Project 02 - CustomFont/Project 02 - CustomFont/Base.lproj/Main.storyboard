@@ -44,7 +44,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-11-8h7" userLabel="ViewContainer">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="63"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ssss sodded" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgN-a4-x8k" userLabel="LabelContent">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ssss sodded" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgN-a4-x8k" userLabel="labelContent">
                                                 <rect key="frame" x="8" y="8" width="584" height="47"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -101,8 +101,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="LabelContent" destination="tgN-a4-x8k" id="ctV-RF-Pv3"/>
                         <outlet property="buttonChangeFont" destination="dwd-yR-cUU" id="jSQ-cx-smc"/>
+                        <outlet property="labelContent" destination="tgN-a4-x8k" id="LHP-Rj-UBJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
