@@ -33,21 +33,21 @@ class TableViewCell: UITableViewCell {
     //=============================//
     
     /// Image Background
-    @IBOutlet weak var ImageViewBackground: UIImageView!
+    @IBOutlet weak var imageViewBackground: UIImageView!
     
     /// Button Play ICON
-    @IBOutlet weak var ButtonPlay: UIButton!
+    @IBOutlet weak var buttonPlay: UIButton!
     
     /// Label Title
-    @IBOutlet weak var LabelTitle: UILabel!
+    @IBOutlet weak var labelTitle: UILabel!
     
     //==============================//
     // MARK:     Action
     //=============================//
     
-    @IBAction func ButtonPlayTouchUpInside(sender: AnyObject) {
+    @IBAction func buttonPlayTouchUpInside(sender: AnyObject) {
         /// get Selected Tag
-        initPlayer(ButtonPlay.tag)
+        initPlayer(buttonPlay.tag)
     }
     
     

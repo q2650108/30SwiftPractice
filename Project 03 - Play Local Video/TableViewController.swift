@@ -94,11 +94,11 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as! TableViewCell
         
         // Set the Image View Background
-        cell.ImageViewBackground.image =  UIImage(named: appDelegate.data[indexPath.row].imageNamed)
+        cell.imageViewBackground.image =  UIImage(named: appDelegate.data[indexPath.row].imageNamed)
         // Set the Label Title
-        cell.LabelTitle.text = appDelegate.data[indexPath.row].title
+        cell.labelTitle.text = appDelegate.data[indexPath.row].title
         // Set the Button Tag
-        cell.ButtonPlay.tag = indexPath.row
+        cell.buttonPlay.tag = indexPath.row
         
         
         return cell
