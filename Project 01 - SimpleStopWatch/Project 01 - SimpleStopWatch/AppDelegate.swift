@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  Project-01-SimpleStopWatch
+//  Project 01 - SimpleStopWatch
 //
-//  Created by SHUN on 10/6/16.
+//  Created by SHUN on 10/17/16.
 //  Copyright © 2016 q2650108. All rights reserved.
 //
 

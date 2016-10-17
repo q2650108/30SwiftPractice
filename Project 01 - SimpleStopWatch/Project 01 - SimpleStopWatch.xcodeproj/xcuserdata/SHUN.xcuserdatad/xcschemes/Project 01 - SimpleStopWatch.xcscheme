@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2442E4321DA5DF6B00BB82FD"
-               BuildableName = "Project-01-SimpleStopWatch.app"
-               BlueprintName = "Project-01-SimpleStopWatch"
-               ReferencedContainer = "container:Project-01-SimpleStopWatch.xcodeproj">
+               BlueprintIdentifier = "2441CF931DB4A5EC00578AD3"
+               BuildableName = "Project 01 - SimpleStopWatch.app"
+               BlueprintName = "Project 01 - SimpleStopWatch"
+               ReferencedContainer = "container:Project 01 - SimpleStopWatch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2442E4321DA5DF6B00BB82FD"
-            BuildableName = "Project-01-SimpleStopWatch.app"
-            BlueprintName = "Project-01-SimpleStopWatch"
-            ReferencedContainer = "container:Project-01-SimpleStopWatch.xcodeproj">
+            BlueprintIdentifier = "2441CF931DB4A5EC00578AD3"
+            BuildableName = "Project 01 - SimpleStopWatch.app"
+            BlueprintName = "Project 01 - SimpleStopWatch"
+            ReferencedContainer = "container:Project 01 - SimpleStopWatch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2442E4321DA5DF6B00BB82FD"
-            BuildableName = "Project-01-SimpleStopWatch.app"
-            BlueprintName = "Project-01-SimpleStopWatch"
-            ReferencedContainer = "container:Project-01-SimpleStopWatch.xcodeproj">
+            BlueprintIdentifier = "2441CF931DB4A5EC00578AD3"
+            BuildableName = "Project 01 - SimpleStopWatch.app"
+            BlueprintName = "Project 01 - SimpleStopWatch"
+            ReferencedContainer = "container:Project 01 - SimpleStopWatch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2442E4321DA5DF6B00BB82FD"
-            BuildableName = "Project-01-SimpleStopWatch.app"
-            BlueprintName = "Project-01-SimpleStopWatch"
-            ReferencedContainer = "container:Project-01-SimpleStopWatch.xcodeproj">
+            BlueprintIdentifier = "2441CF931DB4A5EC00578AD3"
+            BuildableName = "Project 01 - SimpleStopWatch.app"
+            BlueprintName = "Project 01 - SimpleStopWatch"
+            ReferencedContainer = "container:Project 01 - SimpleStopWatch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

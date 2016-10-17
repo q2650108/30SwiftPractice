@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_01_SimpleStopWatch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_01___SimpleStopWatch" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -44,7 +44,7 @@
                                             </mask>
                                         </variation>
                                         <connections>
-                                            <action selector="ButtonResetTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWe-Gj-Hda"/>
+                                            <action selector="buttonResetTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lai-dE-bkC"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1n-Mr-Hgg" userLabel="LabelTime">
@@ -107,7 +107,7 @@
                                         <state key="normal" backgroundImage="Pause-50"/>
                                         <state key="highlighted" backgroundImage="Pause-50_pressed"/>
                                         <connections>
-                                            <action selector="ButtonPauseTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEC-SX-M8X"/>
+                                            <action selector="buttonPauseTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vne-J9-xmL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -145,7 +145,7 @@
                                         <state key="normal" backgroundImage="Play-50"/>
                                         <state key="highlighted" backgroundImage="Play-50_pressd"/>
                                         <connections>
-                                            <action selector="ButtonStartTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pnd-3V-19E"/>
+                                            <action selector="buttonStartTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MQA-iy-hB5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -216,10 +216,10 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="ButtonPause" destination="58Q-5K-iqU" id="I94-QR-cGt"/>
-                        <outlet property="ButtonReset" destination="TGq-ox-OcD" id="M1c-Wg-zhk"/>
-                        <outlet property="ButtonStart" destination="RMy-dj-knQ" id="XV8-At-rqM"/>
-                        <outlet property="LabelTime" destination="l1n-Mr-Hgg" id="u4d-J7-edj"/>
+                        <outlet property="buttonPause" destination="58Q-5K-iqU" id="mC9-Fe-A5e"/>
+                        <outlet property="buttonReset" destination="TGq-ox-OcD" id="ogv-of-TTz"/>
+                        <outlet property="buttonStart" destination="RMy-dj-knQ" id="rw8-Bl-HeM"/>
+                        <outlet property="labelTime" destination="l1n-Mr-Hgg" id="UgJ-O0-Pmr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
