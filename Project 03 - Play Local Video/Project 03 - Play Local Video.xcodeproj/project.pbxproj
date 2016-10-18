@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		244D49681DADF25A00B9D970 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D49671DADF25A00B9D970 /* NavigationController.swift */; };
+		246AB92A1DB5DD24004AF89A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246AB9291DB5DD24004AF89A /* TableViewController.swift */; };
 		246F717D1DADD4CE001A5FC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F717C1DADD4CE001A5FC3 /* AppDelegate.swift */; };
 		246F71821DADD4CE001A5FC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246F71801DADD4CE001A5FC3 /* Main.storyboard */; };
 		246F71841DADD4CE001A5FC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246F71831DADD4CE001A5FC3 /* Assets.xcassets */; };
 		246F71871DADD4CE001A5FC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246F71851DADD4CE001A5FC3 /* LaunchScreen.storyboard */; };
-		246F718F1DADD8BB001A5FC3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F718E1DADD8BB001A5FC3 /* TableViewController.swift */; };
 		246F71911DADD8CC001A5FC3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246F71901DADD8CC001A5FC3 /* TableViewCell.swift */; };
 		246F71991DADE00E001A5FC3 /* Computer.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 246F71931DADDF4A001A5FC3 /* Computer.mp4 */; };
 		246F719A1DADE00E001A5FC3 /* DiscoBall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 246F71941DADDF4A001A5FC3 /* DiscoBall.mp4 */; };
@@ -24,13 +24,13 @@
 
 /* Begin PBXFileReference section */
 		244D49671DADF25A00B9D970 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		246AB9291DB5DD24004AF89A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		246F71791DADD4CE001A5FC3 /* Project 03 - Play Local Video.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 03 - Play Local Video.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		246F717C1DADD4CE001A5FC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		246F71811DADD4CE001A5FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		246F71831DADD4CE001A5FC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		246F71861DADD4CE001A5FC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246F71881DADD4CE001A5FC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		246F718E1DADD8BB001A5FC3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
 		246F71901DADD8CC001A5FC3 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		246F71931DADDF4A001A5FC3 /* Computer.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Computer.mp4; sourceTree = "<group>"; };
 		246F71941DADDF4A001A5FC3 /* DiscoBall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = DiscoBall.mp4; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			children = (
 				246F71921DADDF37001A5FC3 /* Video */,
 				244D49671DADF25A00B9D970 /* NavigationController.swift */,
-				246F718E1DADD8BB001A5FC3 /* TableViewController.swift */,
+				246AB9291DB5DD24004AF89A /* TableViewController.swift */,
 				246F71901DADD8CC001A5FC3 /* TableViewCell.swift */,
 				246F717C1DADD4CE001A5FC3 /* AppDelegate.swift */,
 				246F71801DADD4CE001A5FC3 /* Main.storyboard */,
@@ -177,7 +177,7 @@
 				246F71911DADD8CC001A5FC3 /* TableViewCell.swift in Sources */,
 				244D49681DADF25A00B9D970 /* NavigationController.swift in Sources */,
 				246F717D1DADD4CE001A5FC3 /* AppDelegate.swift in Sources */,
-				246F718F1DADD8BB001A5FC3 /* TableViewController.swift in Sources */,
+				246AB92A1DB5DD24004AF89A /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
