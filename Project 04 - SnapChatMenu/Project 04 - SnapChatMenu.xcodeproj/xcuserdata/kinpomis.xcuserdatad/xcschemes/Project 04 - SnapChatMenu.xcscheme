@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "24411FA01DA78AC400AD7E67"
-               BuildableName = "Project 02 - CustomFont.app"
-               BlueprintName = "Project 02 - CustomFont"
-               ReferencedContainer = "container:Project 02 - CustomFont.xcodeproj">
+               BlueprintIdentifier = "D2F44F281DB066F0009D92E5"
+               BuildableName = "Project 04 - SnapChatMenu.app"
+               BlueprintName = "Project 04 - SnapChatMenu"
+               ReferencedContainer = "container:Project 04 - SnapChatMenu.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24411FA01DA78AC400AD7E67"
-            BuildableName = "Project 02 - CustomFont.app"
-            BlueprintName = "Project 02 - CustomFont"
-            ReferencedContainer = "container:Project 02 - CustomFont.xcodeproj">
+            BlueprintIdentifier = "D2F44F281DB066F0009D92E5"
+            BuildableName = "Project 04 - SnapChatMenu.app"
+            BlueprintName = "Project 04 - SnapChatMenu"
+            ReferencedContainer = "container:Project 04 - SnapChatMenu.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24411FA01DA78AC400AD7E67"
-            BuildableName = "Project 02 - CustomFont.app"
-            BlueprintName = "Project 02 - CustomFont"
-            ReferencedContainer = "container:Project 02 - CustomFont.xcodeproj">
+            BlueprintIdentifier = "D2F44F281DB066F0009D92E5"
+            BuildableName = "Project 04 - SnapChatMenu.app"
+            BlueprintName = "Project 04 - SnapChatMenu"
+            ReferencedContainer = "container:Project 04 - SnapChatMenu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "24411FA01DA78AC400AD7E67"
-            BuildableName = "Project 02 - CustomFont.app"
-            BlueprintName = "Project 02 - CustomFont"
-            ReferencedContainer = "container:Project 02 - CustomFont.xcodeproj">
+            BlueprintIdentifier = "D2F44F281DB066F0009D92E5"
+            BuildableName = "Project 04 - SnapChatMenu.app"
+            BlueprintName = "Project 04 - SnapChatMenu"
+            ReferencedContainer = "container:Project 04 - SnapChatMenu.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
