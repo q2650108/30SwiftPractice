@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		246AB92C1DB6220F004AF89A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246AB92B1DB6220F004AF89A /* PageViewController.swift */; };
+		246AB92E1DB62562004AF89A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246AB92D1DB62562004AF89A /* MenuViewController.swift */; };
+		24D7CD661DB7292B000189A1 /* AVCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D7CD651DB7292B000189A1 /* AVCaptureViewController.swift */; };
 		D2F44F2D1DB066F0009D92E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F44F2C1DB066F0009D92E5 /* AppDelegate.swift */; };
 		D2F44F2F1DB066F0009D92E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F44F2E1DB066F0009D92E5 /* ViewController.swift */; };
 		D2F44F321DB066F0009D92E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2F44F301DB066F0009D92E5 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		246AB92B1DB6220F004AF89A /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		246AB92D1DB62562004AF89A /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		24D7CD651DB7292B000189A1 /* AVCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCaptureViewController.swift; sourceTree = "<group>"; };
 		D2F44F291DB066F0009D92E5 /* Project 04 - SnapChatMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 04 - SnapChatMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2F44F2C1DB066F0009D92E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2F44F2E1DB066F0009D92E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		246AB9311DB7114D004AF89A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D2F44F301DB066F0009D92E5 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		246AB9321DB71165004AF89A /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				246AB92B1DB6220F004AF89A /* PageViewController.swift */,
+				D2F44F2E1DB066F0009D92E5 /* ViewController.swift */,
+				246AB92D1DB62562004AF89A /* MenuViewController.swift */,
+				24D7CD651DB7292B000189A1 /* AVCaptureViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
 		D2F44F201DB066F0009D92E5 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +81,9 @@
 		D2F44F2B1DB066F0009D92E5 /* Project 04 - SnapChatMenu */ = {
 			isa = PBXGroup;
 			children = (
+				246AB9321DB71165004AF89A /* VC */,
+				246AB9311DB7114D004AF89A /* Storyboard */,
 				D2F44F2C1DB066F0009D92E5 /* AppDelegate.swift */,
-				D2F44F2E1DB066F0009D92E5 /* ViewController.swift */,
-				D2F44F301DB066F0009D92E5 /* Main.storyboard */,
 				D2F44F361DB066F0009D92E5 /* Assets.xcassets */,
 				D2F44F381DB066F0009D92E5 /* LaunchScreen.storyboard */,
 				D2F44F3B1DB066F0009D92E5 /* Info.plist */,
@@ -140,7 +165,10 @@
 			files = (
 				D2F44F2F1DB066F0009D92E5 /* ViewController.swift in Sources */,
 				D2F44F351DB066F0009D92E5 /* Project_04___SnapChatMenu.xcdatamodeld in Sources */,
+				246AB92E1DB62562004AF89A /* MenuViewController.swift in Sources */,
 				D2F44F2D1DB066F0009D92E5 /* AppDelegate.swift in Sources */,
+				24D7CD661DB7292B000189A1 /* AVCaptureViewController.swift in Sources */,
+				246AB92C1DB6220F004AF89A /* PageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,10 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Project 04 - SnapChatMenu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "newkinpogroup.com.Project-04---SnapChatMenu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -264,10 +295,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Project 04 - SnapChatMenu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "newkinpogroup.com.Project-04---SnapChatMenu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -290,6 +324,7 @@
 				D2F44F401DB066F0009D92E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
