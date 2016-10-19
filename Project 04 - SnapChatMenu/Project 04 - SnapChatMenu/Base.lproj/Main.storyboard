@@ -1,25 +1,163 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ILD-Ix-7rr">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Page View Controller-->
+        <scene sceneID="6dH-0y-OGl">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ILD-Ix-7rr" customClass="PageViewController" customModule="Project_04___SnapChatMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4JX-4z-RKV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="550"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="48J-Y4-w3I">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="MFw-Sh-ZZw" customClass="MenuViewController" customModule="Project_04___SnapChatMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="b6o-lW-GQk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wv2-Wx-0ux"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="itO-jR-ccB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="mOm-IG-NW7">
+                                <rect key="frame" x="30" y="30" width="540" height="540"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mOm-IG-NW7" firstAttribute="width" secondItem="itO-jR-ccB" secondAttribute="width" multiplier="0.9" id="Rat-iS-S4a"/>
+                            <constraint firstItem="mOm-IG-NW7" firstAttribute="height" secondItem="itO-jR-ccB" secondAttribute="height" multiplier="0.9" id="b3i-Aa-ov2"/>
+                            <constraint firstItem="mOm-IG-NW7" firstAttribute="centerY" secondItem="itO-jR-ccB" secondAttribute="centerY" id="dfc-BK-fEX"/>
+                            <constraint firstItem="mOm-IG-NW7" firstAttribute="centerX" secondItem="itO-jR-ccB" secondAttribute="centerX" id="hIj-QT-mJj"/>
+                        </constraints>
                     </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AwP-lw-n7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="988" y="1232"/>
+        </scene>
+        <!--Capture View Controller-->
+        <scene sceneID="EFF-KC-XcM">
+            <objects>
+                <viewController storyboardIdentifier="AVCaptureViewController" id="2rC-jw-MD6" customClass="AVCaptureViewController" customModule="Project_04___SnapChatMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Laa-IM-laQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKs-vA-yuh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yOm-Ma-sBd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yO0-en-wV0" userLabel="viewContent">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-CP-elG" userLabel="visualEffectView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="JUc-oz-6iv">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cVx-CP-elG" firstAttribute="width" secondItem="yOm-Ma-sBd" secondAttribute="width" id="9vx-cl-SNA"/>
+                            <constraint firstItem="cVx-CP-elG" firstAttribute="height" secondItem="yOm-Ma-sBd" secondAttribute="height" id="K97-hR-Ut3"/>
+                            <constraint firstItem="cVx-CP-elG" firstAttribute="centerY" secondItem="yOm-Ma-sBd" secondAttribute="centerY" id="U7C-C5-DLu"/>
+                            <constraint firstItem="yO0-en-wV0" firstAttribute="centerX" secondItem="yOm-Ma-sBd" secondAttribute="centerX" id="Zxy-qo-Cd1"/>
+                            <constraint firstItem="yO0-en-wV0" firstAttribute="width" secondItem="yOm-Ma-sBd" secondAttribute="width" id="iOM-Ds-Xbk"/>
+                            <constraint firstItem="yO0-en-wV0" firstAttribute="height" secondItem="yOm-Ma-sBd" secondAttribute="height" id="k3C-iH-xqp"/>
+                            <constraint firstItem="yO0-en-wV0" firstAttribute="centerY" secondItem="yOm-Ma-sBd" secondAttribute="centerY" id="qtB-qE-vOw"/>
+                            <constraint firstItem="cVx-CP-elG" firstAttribute="centerX" secondItem="yOm-Ma-sBd" secondAttribute="centerX" id="vHT-FH-CMG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewContent" destination="yO0-en-wV0" id="mpo-mU-y2D"/>
+                        <outlet property="visualEffectView" destination="cVx-CP-elG" id="qSO-nz-rz5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTF-ZB-Oko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="-119"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="cnv-MQ-uA2">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="inB-ep-e9h" customClass="ViewController" customModule="Project_04___SnapChatMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s0O-2p-8kb"/>
+                        <viewControllerLayoutGuide type="bottom" id="mEd-dg-aGO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OVr-Ni-W5h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sWY-rZ-oMZ" userLabel="imageContainer">
+                                <rect key="frame" x="30" y="20" width="540" height="540"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torre-cajasol-786180_1920" translatesAutoresizingMaskIntoConstraints="NO" id="p5o-fm-RDj" userLabel="imageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="540" height="540"/>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="p5o-fm-RDj" secondAttribute="height" multiplier="1:1" id="WtA-TR-Wu9"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="p5o-fm-RDj" firstAttribute="width" secondItem="sWY-rZ-oMZ" secondAttribute="width" id="23e-3f-t4E"/>
+                                    <constraint firstItem="p5o-fm-RDj" firstAttribute="centerX" secondItem="sWY-rZ-oMZ" secondAttribute="centerX" id="8KK-Al-aV3"/>
+                                    <constraint firstAttribute="width" secondItem="sWY-rZ-oMZ" secondAttribute="height" multiplier="1:1" id="T1A-jB-fMa"/>
+                                    <constraint firstItem="p5o-fm-RDj" firstAttribute="height" secondItem="sWY-rZ-oMZ" secondAttribute="height" id="VRi-cf-6fK"/>
+                                    <constraint firstItem="p5o-fm-RDj" firstAttribute="centerY" secondItem="sWY-rZ-oMZ" secondAttribute="centerY" id="mav-OB-D40"/>
+                                </constraints>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MP3-32-Cvi" userLabel="segmented">
+                                <rect key="frame" x="243" y="560" width="115" height="31"/>
+                                <segments>
+                                    <segment title="Square"/>
+                                    <segment title="Circle "/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedValueChanged:" destination="inB-ep-e9h" eventType="valueChanged" id="FIR-xl-y78"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sWY-rZ-oMZ" firstAttribute="centerX" secondItem="OVr-Ni-W5h" secondAttribute="centerX" id="Lgb-sT-9lz"/>
+                            <constraint firstItem="sWY-rZ-oMZ" firstAttribute="width" secondItem="OVr-Ni-W5h" secondAttribute="width" multiplier="0.9" id="O0Y-Sq-jkU"/>
+                            <constraint firstItem="sWY-rZ-oMZ" firstAttribute="top" secondItem="s0O-2p-8kb" secondAttribute="bottom" id="Wxz-sm-Kqf"/>
+                            <constraint firstItem="MP3-32-Cvi" firstAttribute="height" secondItem="OVr-Ni-W5h" secondAttribute="height" multiplier="0.05" id="c4j-mW-IAG"/>
+                            <constraint firstItem="mEd-dg-aGO" firstAttribute="top" secondItem="MP3-32-Cvi" secondAttribute="bottom" constant="10" id="dv7-Ae-tdG"/>
+                            <constraint firstItem="MP3-32-Cvi" firstAttribute="centerX" secondItem="OVr-Ni-W5h" secondAttribute="centerX" id="uYX-Wd-WRW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="p5o-fm-RDj" id="LW4-Tj-WeC"/>
+                        <outlet property="segmented" destination="MP3-32-Cvi" id="vYf-sY-f7l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4u-g9-oyG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="550"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="right" width="320" height="568"/>
+        <image name="torre-cajasol-786180_1920" width="579" height="579"/>
+    </resources>
 </document>
