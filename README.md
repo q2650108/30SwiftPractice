@@ -58,4 +58,17 @@ what did i learn from this practice ?
  * use the NSNotificationCenter to detect the AVPlayer Did Finish Playing
 ```
 
-### Project 04 - 
+### Project 04 - [SnapChatMenu](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2004%20-%20SnapChatMenu)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2004%20-%20SnapChatMenu/4_1.gif?raw=true)
+<br />
+
+
+```
+what did i learn from this practice ? 
+ 
+ * Page View Controller 
+ * Segmented Control
+ * Visual Effect View
+ * AVFoundation - use the AVCaptureDevicePosition (Back , Front ) and get the Image
+```
