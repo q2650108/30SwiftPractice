@@ -72,3 +72,16 @@ what did i learn from this practice ?
  * Visual Effect View
  * AVFoundation - use the AVCaptureDevicePosition (Back , Front ) and get the Image
 ```
+
+### Project 05 - [CarouselEffect](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2005%20-%20CarouselEffect)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2005%20-%20CarouselEffect/5_1.gif?raw=true)
+<br />
+
+
+```
+what did i learn from this practice ? 
+ 
+ * Collection view and Custom cell
+ * Visual Effect View Blur and Vibrancy
+```
