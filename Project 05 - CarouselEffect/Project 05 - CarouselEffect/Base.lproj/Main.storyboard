@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ugy-JA-SVB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--My Collection View Controller-->
+        <scene sceneID="z92-QD-t3u">
+            <objects>
+                <collectionViewController storyboardIdentifier="CollectionViewController" id="ugy-JA-SVB" customClass="MyCollectionViewController" customModule="Project_05___CarouselEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rMu-xd-F7J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HND-ue-A2M">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="Yaq-ce-DO0" customClass="MyCollectionViewCell" customModule="Project_05___CarouselEffect" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sib-HR-Jgb" userLabel="viewContainer">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e" translatesAutoresizingMaskIntoConstraints="NO" id="k3e-aP-lea" userLabel="imageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsi-fK-kMe">
+                                                    <rect key="frame" x="0.0" y="40" width="50" height="10"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="MO5-7s-Wrz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="10"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <subviews>
+                                                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ZM-cf-AZo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="10"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="RHJ-7j-cOW">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="10"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBX-8R-whp" userLabel="labelTitle">
+                                                                            <rect key="frame" x="0.0" y="-7" width="50" height="24"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="fBX-8R-whp" firstAttribute="width" secondItem="RHJ-7j-cOW" secondAttribute="width" id="HPO-vo-tQt"/>
+                                                                        <constraint firstItem="fBX-8R-whp" firstAttribute="centerY" secondItem="RHJ-7j-cOW" secondAttribute="centerY" id="Qh1-Ln-82s"/>
+                                                                        <constraint firstItem="fBX-8R-whp" firstAttribute="centerX" secondItem="RHJ-7j-cOW" secondAttribute="centerX" id="SAX-Kg-WXg"/>
+                                                                    </constraints>
+                                                                </view>
+                                                                <vibrancyEffect>
+                                                                    <blurEffect style="dark"/>
+                                                                </vibrancyEffect>
+                                                            </visualEffectView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="6ZM-cf-AZo" firstAttribute="width" secondItem="lsi-fK-kMe" secondAttribute="width" id="RxR-o8-rWf"/>
+                                                        <constraint firstItem="6ZM-cf-AZo" firstAttribute="height" secondItem="lsi-fK-kMe" secondAttribute="height" id="cON-Q2-o1q"/>
+                                                        <constraint firstItem="6ZM-cf-AZo" firstAttribute="centerY" secondItem="lsi-fK-kMe" secondAttribute="centerY" id="dGl-ji-TSQ"/>
+                                                        <constraint firstItem="6ZM-cf-AZo" firstAttribute="centerX" secondItem="lsi-fK-kMe" secondAttribute="centerX" id="yVc-e1-xRy"/>
+                                                    </constraints>
+                                                    <blurEffect style="light"/>
+                                                </visualEffectView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="lsi-fK-kMe" secondAttribute="bottom" id="GPz-Be-BYN"/>
+                                                <constraint firstItem="lsi-fK-kMe" firstAttribute="width" secondItem="sib-HR-Jgb" secondAttribute="width" id="bCb-we-VPP"/>
+                                                <constraint firstItem="lsi-fK-kMe" firstAttribute="centerX" secondItem="sib-HR-Jgb" secondAttribute="centerX" id="bNJ-A9-m0L"/>
+                                                <constraint firstItem="k3e-aP-lea" firstAttribute="height" secondItem="sib-HR-Jgb" secondAttribute="height" id="bNe-Fw-ld6"/>
+                                                <constraint firstItem="lsi-fK-kMe" firstAttribute="height" secondItem="sib-HR-Jgb" secondAttribute="height" multiplier="0.2" id="eMR-NQ-2fb"/>
+                                                <constraint firstItem="k3e-aP-lea" firstAttribute="centerY" secondItem="sib-HR-Jgb" secondAttribute="centerY" id="kyg-XZ-1ZV"/>
+                                                <constraint firstItem="k3e-aP-lea" firstAttribute="centerX" secondItem="sib-HR-Jgb" secondAttribute="centerX" id="q3f-G4-9aF"/>
+                                                <constraint firstItem="k3e-aP-lea" firstAttribute="width" secondItem="sib-HR-Jgb" secondAttribute="width" id="wbr-8m-ZKR"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="sib-HR-Jgb" firstAttribute="width" secondItem="Yaq-ce-DO0" secondAttribute="width" id="5A5-kF-sbi"/>
+                                    <constraint firstItem="sib-HR-Jgb" firstAttribute="centerX" secondItem="Yaq-ce-DO0" secondAttribute="centerX" id="a5m-BY-WAf"/>
+                                    <constraint firstItem="sib-HR-Jgb" firstAttribute="height" secondItem="Yaq-ce-DO0" secondAttribute="height" id="bF3-bg-5oq"/>
+                                    <constraint firstItem="sib-HR-Jgb" firstAttribute="centerY" secondItem="Yaq-ce-DO0" secondAttribute="centerY" id="oul-3U-cZ5"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="k3e-aP-lea" id="Twn-fH-uVX"/>
+                                    <outlet property="labelTitle" destination="fBX-8R-whp" id="VDn-Ol-yLx"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ugy-JA-SVB" id="fgk-WT-zh1"/>
+                            <outlet property="delegate" destination="ugy-JA-SVB" id="kpn-nB-rYa"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PNh-pW-eic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="456"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="e" width="320" height="320"/>
+    </resources>
+</document>
