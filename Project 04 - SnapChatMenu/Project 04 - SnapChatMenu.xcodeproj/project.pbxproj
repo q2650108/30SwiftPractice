@@ -285,7 +285,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Project 04 - SnapChatMenu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "newkinpogroup.com.Project-04---SnapChatMenu";
+				PRODUCT_BUNDLE_IDENTIFIER = "q2650108.com.Project-04---SnapChatMenu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -299,7 +299,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Project 04 - SnapChatMenu/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "newkinpogroup.com.Project-04---SnapChatMenu";
+				PRODUCT_BUNDLE_IDENTIFIER = "q2650108.com.Project-04---SnapChatMenu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
