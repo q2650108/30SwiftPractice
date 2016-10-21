@@ -13,6 +13,7 @@
 		24D3927E1DB9B66100EB6088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D3927C1DB9B66100EB6088 /* LaunchScreen.storyboard */; };
 		24D392861DB9B69300EB6088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D392851DB9B69300EB6088 /* Main.storyboard */; };
 		24D392881DB9B6B200EB6088 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D392871DB9B6B200EB6088 /* MapKit.framework */; };
+		24D3928B1DB9D24F00EB6088 /* UIView+borderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		24D3927F1DB9B66100EB6088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D392851DB9B69300EB6088 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24D392871DB9B6B200EB6088 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+borderStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		24D392721DB9B66100EB6088 /* Project 06 - Get user's current location */ = {
 			isa = PBXGroup;
 			children = (
+				24D392891DB9D20000EB6088 /* extension */,
 				24D392731DB9B66100EB6088 /* AppDelegate.swift */,
 				24D392751DB9B66100EB6088 /* ViewController.swift */,
 				24D392851DB9B69300EB6088 /* Main.storyboard */,
@@ -66,6 +69,14 @@
 				24D3927F1DB9B66100EB6088 /* Info.plist */,
 			);
 			path = "Project 06 - Get user's current location";
+			sourceTree = "<group>";
+		};
+		24D392891DB9D20000EB6088 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */,
+			);
+			name = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +157,7 @@
 			files = (
 				24D392761DB9B66100EB6088 /* ViewController.swift in Sources */,
 				24D392741DB9B66100EB6088 /* AppDelegate.swift in Sources */,
+				24D3928B1DB9D24F00EB6088 /* UIView+borderStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +299,7 @@
 				24D392841DB9B66100EB6088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
