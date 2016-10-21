@@ -13,6 +13,7 @@
 		D25A1DE71DB99DDA00AA1441 /* Project_6___Get_user_s_current_location.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25A1DE51DB99DDA00AA1441 /* Project_6___Get_user_s_current_location.xcdatamodeld */; };
 		D25A1DE91DB99DDA00AA1441 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25A1DE81DB99DDA00AA1441 /* Assets.xcassets */; };
 		D25A1DEC1DB99DDA00AA1441 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25A1DEA1DB99DDA00AA1441 /* LaunchScreen.storyboard */; };
+		D25A1DF81DB9A0C700AA1441 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25A1DF71DB9A0C700AA1441 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D25A1DE81DB99DDA00AA1441 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D25A1DEB1DB99DDA00AA1441 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25A1DED1DB99DDA00AA1441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25A1DF71DB9A0C700AA1441 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25A1DF81DB9A0C700AA1441 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		D25A1DD21DB99DDA00AA1441 = {
 			isa = PBXGroup;
 			children = (
+				D25A1DF71DB9A0C700AA1441 /* MapKit.framework */,
 				D25A1DDD1DB99DDA00AA1441 /* Project 6 - Get user's current location */,
 				D25A1DDC1DB99DDA00AA1441 /* Products */,
 			);
@@ -99,6 +103,11 @@
 				TargetAttributes = {
 					D25A1DDA1DB99DDA00AA1441 = {
 						CreatedOnToolsVersion = 7.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -290,6 +299,7 @@
 				D25A1DF21DB99DDA00AA1441 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
