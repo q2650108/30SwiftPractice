@@ -2,6 +2,8 @@
 
 如果您有任何建議,還請不吝指教.非常感謝您的觀看以及協助.
 
+This Practice was totally inspired by [30 Days of Swift](https://github.com/allenwong/30DaysofSwift) and [100 Days of Swift](http://samvlu.com/index.html)
+
 If you have any suggestion on this swfit practice , please let me know how to improve it, 
 
 I'll appreciate it a lot ,because it can make me better. 
