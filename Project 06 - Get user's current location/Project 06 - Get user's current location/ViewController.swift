@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Project 6 - Get user's current location
+//  Project 06 - Get user's current location
 //
-//  Created by kinpomis on 2016/10/21.
-//  Copyright © 2016年 q2650108. All rights reserved.
+//  Created by SHUN on 10/21/16.
+//  Copyright © 2016 q2650108. All rights reserved.
 //
 
 import UIKit

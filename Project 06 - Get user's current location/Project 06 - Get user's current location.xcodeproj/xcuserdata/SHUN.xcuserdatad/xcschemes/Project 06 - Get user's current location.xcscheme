@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D25A1DDA1DB99DDA00AA1441"
-               BuildableName = "Project 6 - Get user&apos;s current location.app"
-               BlueprintName = "Project 6 - Get user&apos;s current location"
-               ReferencedContainer = "container:Project 6 - Get user&apos;s current location.xcodeproj">
+               BlueprintIdentifier = "24D3926F1DB9B66000EB6088"
+               BuildableName = "Project 06 - Get user&apos;s current location.app"
+               BlueprintName = "Project 06 - Get user&apos;s current location"
+               ReferencedContainer = "container:Project 06 - Get user&apos;s current location.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D25A1DDA1DB99DDA00AA1441"
-            BuildableName = "Project 6 - Get user&apos;s current location.app"
-            BlueprintName = "Project 6 - Get user&apos;s current location"
-            ReferencedContainer = "container:Project 6 - Get user&apos;s current location.xcodeproj">
+            BlueprintIdentifier = "24D3926F1DB9B66000EB6088"
+            BuildableName = "Project 06 - Get user&apos;s current location.app"
+            BlueprintName = "Project 06 - Get user&apos;s current location"
+            ReferencedContainer = "container:Project 06 - Get user&apos;s current location.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D25A1DDA1DB99DDA00AA1441"
-            BuildableName = "Project 6 - Get user&apos;s current location.app"
-            BlueprintName = "Project 6 - Get user&apos;s current location"
-            ReferencedContainer = "container:Project 6 - Get user&apos;s current location.xcodeproj">
+            BlueprintIdentifier = "24D3926F1DB9B66000EB6088"
+            BuildableName = "Project 06 - Get user&apos;s current location.app"
+            BlueprintName = "Project 06 - Get user&apos;s current location"
+            ReferencedContainer = "container:Project 06 - Get user&apos;s current location.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D25A1DDA1DB99DDA00AA1441"
-            BuildableName = "Project 6 - Get user&apos;s current location.app"
-            BlueprintName = "Project 6 - Get user&apos;s current location"
-            ReferencedContainer = "container:Project 6 - Get user&apos;s current location.xcodeproj">
+            BlueprintIdentifier = "24D3926F1DB9B66000EB6088"
+            BuildableName = "Project 06 - Get user&apos;s current location.app"
+            BlueprintName = "Project 06 - Get user&apos;s current location"
+            ReferencedContainer = "container:Project 06 - Get user&apos;s current location.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
