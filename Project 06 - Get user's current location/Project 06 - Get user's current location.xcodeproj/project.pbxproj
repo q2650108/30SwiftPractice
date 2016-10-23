@@ -14,6 +14,7 @@
 		24D392861DB9B69300EB6088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D392851DB9B69300EB6088 /* Main.storyboard */; };
 		24D392881DB9B6B200EB6088 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D392871DB9B6B200EB6088 /* MapKit.framework */; };
 		24D3928B1DB9D24F00EB6088 /* UIView+borderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */; };
+		D233A69E1DBC8A72001B7DF7 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D233A69D1DBC8A72001B7DF7 /* America.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		24D392851DB9B69300EB6088 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24D392871DB9B6B200EB6088 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+borderStyle.swift"; sourceTree = "<group>"; };
+		D233A69D1DBC8A72001B7DF7 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = America.gpx; path = "../../../../Downloads/GeoTargeting-demo-master/GeoTargeting/America.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		24D392721DB9B66100EB6088 /* Project 06 - Get user's current location */ = {
 			isa = PBXGroup;
 			children = (
+				D233A69D1DBC8A72001B7DF7 /* America.gpx */,
 				24D392891DB9D20000EB6088 /* extension */,
 				24D392731DB9B66100EB6088 /* AppDelegate.swift */,
 				24D392751DB9B66100EB6088 /* ViewController.swift */,
@@ -111,6 +114,7 @@
 				TargetAttributes = {
 					24D3926F1DB9B66000EB6088 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KF4365QBY5;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -144,6 +148,7 @@
 			files = (
 				24D3927E1DB9B66100EB6088 /* LaunchScreen.storyboard in Resources */,
 				24D3927B1DB9B66100EB6088 /* Assets.xcassets in Resources */,
+				D233A69E1DBC8A72001B7DF7 /* America.gpx in Resources */,
 				24D392861DB9B69300EB6088 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,10 +267,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Project 06 - Get user's current location/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.q2650108.Project-06---Get-user-s-current-location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -273,10 +281,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Project 06 - Get user's current location/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.q2650108.Project-06---Get-user-s-current-location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

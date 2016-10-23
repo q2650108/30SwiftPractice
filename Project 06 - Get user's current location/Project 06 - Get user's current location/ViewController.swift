@@ -19,6 +19,8 @@ class ViewController: UIViewController {
     private var locationManager : CLLocationManager!
     
     private var currentCoordinate : CLLocationCoordinate2D?
+    
+    private let regionRadius: CLLocationDistance = 500
     //==============================//
     // MARK:     Public Property
     //=============================//
@@ -58,6 +60,8 @@ class ViewController: UIViewController {
     @IBAction func buttonClearTouchUpInside(sender: AnyObject) {
     }
     
+    
+    
     //==============================//
     // MARK:     Life Cycle
     //=============================//
@@ -70,7 +74,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        getLocation()
+        initLocation()
         initMap()
     }
     
@@ -93,7 +97,7 @@ class ViewController: UIViewController {
         
     }
     
-    private func getLocation(){
+    private func initLocation(){
         
         locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -106,52 +110,182 @@ class ViewController: UIViewController {
         locationManager.distanceFilter = kCLLocationAccuracyBestForNavigation
         // 取得自身定位位置的精確度
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-
-        kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        //manager.requestWhenInUseAuthorization()
         
-        if (CLLocationManager.locationServicesEnabled())
-        {
-            // if location Services Enabled
+        
+        // 1. 還沒有詢問過用戶以獲得權限
+        if CLLocationManager.authorizationStatus() == .NotDetermined {
+            locationManager.requestAlwaysAuthorization()
+        }
+            // 2. 用戶不同意
+        else if CLLocationManager.authorizationStatus() == .Denied {
+            //("Location services were previously denied. Please enable location services for this app in Settings.")
+        }
+            // 3. 用戶已經同意
+        else if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
             locationManager.startUpdatingLocation()
-            print("Location Stary")
         }
         
     }
     
     private func initMap(){
         
-        setCoordinate()
         
-        let geoCoder = CLGeocoder()
+        self.mapView.delegate = self
+        // 顯示自身定位位置
+        self.mapView.showsUserLocation = true
         
-        geoCoder.geocodeAddressString("台灣新北市土城區立德路", completionHandler:  {
-            placemark ,error in
-            
-            print(error)
-            
-            let annotation = MKPointAnnotation()
-            annotation.title = "test place"
-            annotation.coordinate = (placemark?.first?.location?.coordinate)!
-            
-            self.mapView.showAnnotations([annotation], animated: true)
-            self.mapView.selectAnnotation(annotation, animated: true)
-            
-        })
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action:#selector(self.handleLongPress))
+        longPressGesture.minimumPressDuration = 0.5
+        longPressGesture.delaysTouchesBegan = true
+        self.mapView.addGestureRecognizer(longPressGesture)
         
         
+        //case None    不跟踪用户的位置
+        //case  Follow   跟踪并在地图上显示用户的当前位置
+        //caseFollowWithHeading  跟踪并在地图上显示用户的当前位置，地图会跟随用户的前进方向进行旋转
+        //用户位置追踪(用户位置追踪用于标记用户当前位置，此时会调用定位服务)
+        self.mapView.userTrackingMode = .Follow
         
-    }
-    
-    private func setCoordinate(){
         
         guard let coordinate = self.currentCoordinate else{
             return
         }
         
-        textFieldLongitude.text = "\(coordinate.longitude)"
-        textFieldLatitude.text = "\(coordinate.latitude)"
+        setCoordinate(coordinate)
+        setLocation(coordinate)
+        
+        //创建一个大头针对象
+        let objectAnnotation = MKPointAnnotation()
+        //设置大头针的显示位置
+        objectAnnotation.coordinate = coordinate
+        
+        //设置点击大头针之后显示的标题
+        objectAnnotation.title = "現在位置"
+        //设置点击大头针之后显示的描述
+        objectAnnotation.subtitle = "就是現在位置"
+        //添加大头针
+        self.mapView.addAnnotation(objectAnnotation)
+        
+        
+        
+        
+        
+        //        let geoCoder = CLGeocoder()
+        //
+        //        geoCoder.geocodeAddressString("板橋圖書館", completionHandler:  {
+        //            placemark ,error in
+        //
+        //            guard let coordinate = placemark?.first?.location?.coordinate else{
+        //                return
+        //            }
+        //
+        //
+        //            if let _ = error {
+        //                print(error)
+        //                return
+        //            }
+        //
+        //
+        //            let annotation = MKPointAnnotation()
+        //            annotation.title = "test place"
+        //            annotation.subtitle =  "Waikiki Gateway Park"
+        //            annotation.coordinate = coordinate
+        //
+        //            //self.mapView.mapType
+        //            //  MKMapType.Standard ：标准地图
+        //            //  MKMapType.Satellite ：卫星地图
+        //            //  MKMapType.Hybrid ：混合地图
+        //
+        //            self.mapView.showAnnotations([annotation], animated: true)
+        //            self.mapView.selectAnnotation(annotation, animated: true)
+        //            self.mapView.setRegion(self.getCoordinateRegion(coordinate), animated: true)
+        //
+        //            // 5. 繪製一個圓圈圖形（用於表示 region 的範圍）
+        //            let circle = MKCircle(centerCoordinate: coordinate, radius: self.regionRadius)
+        //            self.mapView.addOverlay(circle)
+        //
+        //        })
+        //
+        //
+        
+        
+    }
+    
+    private func setCoordinate(currentCoordinate : CLLocationCoordinate2D){
+        
+        textFieldLongitude.text = "\(currentCoordinate.longitude)"
+        textFieldLatitude.text = "\(currentCoordinate.latitude)"
+    }
+    
+    private func setLocation(currentCoordinate : CLLocationCoordinate2D){
+        
+        
+        let getMovedMapCenter: CLLocation =  CLLocation(latitude: currentCoordinate.latitude, longitude: currentCoordinate.longitude)
+        
+        
+        let geocoder = CLGeocoder()
+        
+        
+        
+        geocoder.reverseGeocodeLocation(getMovedMapCenter, completionHandler: {
+            placemarks, error in
+            
+            
+            if let _ = error  {
+                print(error)
+                return
+            }
+            
+            let placeArray = placemarks as [CLPlacemark]!
+            
+            // Place details
+            var placeMark: CLPlacemark!
+            placeMark = placeArray?[0]
+            
+            // Address dictionary
+            //print(placeMark.addressDictionary)
+            
+            // Location name
+            let locationName = placeMark.addressDictionary?["Name"] as? String
+            
+            // City
+            let city = placeMark.addressDictionary?["City"] as? String
+            
+            // Zip code
+            let zip = placeMark.addressDictionary?["ZIP"] as? String
+            
+            // Country
+            let country = placeMark.addressDictionary?["Country"] as? String
+            
+            // subLocality
+            let subLocality = placeMark.addressDictionary?["SubLocality"] as? String
+            
+            
+            self.textFieldLocation.text = "\(zip  ?? "") \(country  ?? "")\(city  ?? "")\(subLocality ?? "")\(locationName ?? "")"
+            
+        })
+        
+    }
+    
+    
+    private func  getCoordinateRegion(coordinate: CLLocationCoordinate2D) -> MKCoordinateRegion{
+        return MKCoordinateRegionMakeWithDistance(coordinate,
+                                                  self.regionRadius * 2.0,
+                                                  self.regionRadius * 2.0)
+    }
+    
+    
+    //==============================//
+    // MARK:      Gesture
+    //=============================//
+    
+    func handleLongPress(gestureReconizer: UILongPressGestureRecognizer) {
+        if gestureReconizer.state != UIGestureRecognizerState.Ended {
+            let touchLocation = gestureReconizer.locationInView(self.mapView)
+            let locationCoordinate = self.mapView.convertPoint(touchLocation,toCoordinateFromView: self.mapView)
+            print("Tapped at lat: \(locationCoordinate.latitude) long: \(locationCoordinate.longitude)")
+            return
+        }
     }
     
     //==============================//
@@ -191,3 +325,133 @@ extension ViewController : CLLocationManagerDelegate {
 }
 
 
+extension ViewController : MKMapViewDelegate {
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if annotation is MKUserLocation {
+            return nil
+        }
+        
+        let reuserId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuserId)
+            as? MKPinAnnotationView
+        if pinView == nil {
+            //创建一个大头针视图
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuserId)
+            //是否显示标注
+            pinView?.canShowCallout = true
+            //大头针第一次显示时是否从天而降
+            pinView?.animatesDrop = true
+            //设置大头针描述的偏移量
+            pinView?.calloutOffset = CGPoint(x:0, y: -10)
+            //设置大头针颜色
+            pinView?.pinTintColor = UIColor.greenColor()
+            //设置大头针描述左边的控件
+            pinView?.leftCalloutAccessoryView = UIButton(type: .ContactAdd)
+            //设置大头针点击注释视图的右侧按钮样式
+            pinView?.rightCalloutAccessoryView = UIButton(type: .DetailDisclosure)
+        }else{
+            pinView?.annotation = annotation
+        }
+        
+        return pinView
+    }
+    
+    
+    // 1. 當用戶進入一個 region
+    func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        print("enter \(region.identifier)")
+    }
+    
+    // 2. 當用戶退出一個 region
+    func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
+        print("exit \(region.identifier)")
+    }
+    
+    func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
+        //print("地图缩放级别发送改变时")
+    }
+    
+    func mapView(mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        //print("地图缩放完毕触法")
+    }
+    
+    func mapViewWillStartLoadingMap(mapView: MKMapView) {
+        //print("开始加载地图")
+    }
+    
+    func mapViewDidFinishLoadingMap(mapView: MKMapView) {
+        //print("地图加载结束")
+    }
+    
+    func mapViewDidFailLoadingMap(mapView: MKMapView, withError error: NSError) {
+        //print("地图加载失败")
+    }
+    
+    func mapViewWillStartRenderingMap(mapView: MKMapView) {
+        //print("开始渲染下载的地图块")
+    }
+    
+    func mapViewDidFinishRenderingMap(mapView: MKMapView, fullyRendered: Bool) {
+        //print("渲染下载的地图结束时调用")
+    }
+    
+    func mapViewWillStartLocatingUser(mapView: MKMapView) {
+        //print("正在跟踪用户的位置")
+    }
+    
+    func mapViewDidStopLocatingUser(mapView: MKMapView) {
+        //print("停止跟踪用户的位置")
+    }
+    
+    func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
+        //print("更新用户的位置")
+    }
+    
+    func mapView(mapView: MKMapView, didFailToLocateUserWithError error: NSError) {
+        //print("跟踪用户的位置失败")
+    }
+    
+    func mapView(mapView: MKMapView, didChangeUserTrackingMode mode: MKUserTrackingMode,
+                 animated: Bool) {
+        //print("改变UserTrackingMode")
+    }
+    
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        //print("设置overlay的渲染")
+        let circleRenderer = MKCircleRenderer(overlay: overlay)
+        circleRenderer.strokeColor = UIColor.redColor()
+        circleRenderer.lineWidth = 1.0
+        return circleRenderer
+    }
+    
+    func mapView(mapView: MKMapView, didAddOverlayRenderers renderers: [MKOverlayRenderer]) {
+        //print("地图上加了overlayRenderers后调用")
+    }
+    
+    /*** 下面是大头针标注相关 *****/
+    func mapView(mapView: MKMapView, didAddAnnotationViews views: [MKAnnotationView]) {
+        //print("添加注释视图")
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+                 calloutAccessoryControlTapped control: UIControl) {
+        //print("点击注释视图按钮")
+    }
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        //print("点击大头针注释视图")
+    }
+    
+    func mapView(mapView: MKMapView, didDeselectAnnotationView view: MKAnnotationView) {
+        //print("取消点击大头针注释视图")
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+                 didChangeDragState newState: MKAnnotationViewDragState,
+                                    fromOldState oldState: MKAnnotationViewDragState) {
+        //print("移动annotation位置时调用")
+    }
+    
+}
