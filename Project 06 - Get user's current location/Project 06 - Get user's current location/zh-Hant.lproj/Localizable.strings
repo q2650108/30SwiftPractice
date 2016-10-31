@@ -1,0 +1,12 @@
+/* No Localized Strings */
+
+"text_title_source_location" = "起點標題";
+"text_subtitle_source_location" = "起點副標題";
+
+"text_title_destination_location" = "終點標題";
+"text_subtitle_destination_location" = "終點副標題";
+
+"text_alert_title_coordinate_empty" = "座標錯誤";
+"text_alert_content_coordinate_empty" = "不得為空";
+
+"text_alert_button_ok" = "了解";

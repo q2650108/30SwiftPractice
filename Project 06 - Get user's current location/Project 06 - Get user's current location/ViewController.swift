@@ -56,20 +56,24 @@ class ViewController: UIViewController {
     
     @IBAction func buttonSearchTouchUpInside(sender: AnyObject) {
         
+        //        guard let coordinate = self.currentCoordinate else{
+        //            return
+        //        }
         
         
-//        guard let textFieldLongitude.text?.isEmpty || textFieldLatitude.text?.isEmpty else {
-//            
-//            let alertController = UIAlertController(title: "Eorror", message:
-//                "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
-//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
-//            
-//            self.presentViewController(alertController, animated: true, completion: nil)
-//            return
-//        }
-//        
-//        
-//        let newLocation = CLLocationCoordinate2D(latitude: , longitude: -73.984472)
+        
+        guard let longitude = textFieldLongitude where !(longitude.text?.isEmpty)! , let latitude = textFieldLatitude where !(latitude.text?.isEmpty)! else {
+            
+            let alertController = UIAlertController(title: "text_alert_title_coordinate_empty".localized,
+                                                    message:"text_alert_content_coordinate_empty".localized,
+                                                    preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "text_alert_button_ok".localized , style: UIAlertActionStyle.Default,handler: nil))
+            
+            self.presentViewController(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        let coordinate = CLLocationCoordinate2D(latitude: Double(latitude.text!)! , longitude: Double(longitude.text!)! )
         
         
     }
@@ -168,25 +172,8 @@ class ViewController: UIViewController {
         //用户位置追踪(用户位置追踪用于标记用户当前位置，此时会调用定位服务)
         self.mapView.userTrackingMode = .Follow
         
-        
-        guard let coordinate = self.currentCoordinate else{
-            return
-        }
-        
         setCoordinate(coordinate)
         setLocation(coordinate)
-        
-        //创建一个大头针对象
-        let objectAnnotation = MKPointAnnotation()
-        //设置大头针的显示位置
-        objectAnnotation.coordinate = coordinate
-        
-        //设置点击大头针之后显示的标题
-        objectAnnotation.title = "現在位置"
-        //设置点击大头针之后显示的描述
-        objectAnnotation.subtitle = "就是現在位置"
-        //添加大头针
-        self.mapView.addAnnotation(objectAnnotation)
         
         //        let geoCoder = CLGeocoder()
         //
@@ -299,8 +286,30 @@ class ViewController: UIViewController {
         if gestureReconizer.state != UIGestureRecognizerState.Ended {
             let touchLocation = gestureReconizer.locationInView(self.mapView)
             let locationCoordinate = self.mapView.convertPoint(touchLocation,toCoordinateFromView: self.mapView)
-            print("Tapped at lat: \(locationCoordinate.latitude) long: \(locationCoordinate.longitude)")
-            return
+            //print("Tapped at lat: \(locationCoordinate.latitude) long: \(locationCoordinate.longitude)")
+            
+            let coordinate = CLLocationCoordinate2D(latitude: locationCoordinate.latitude , longitude: locationCoordinate.longitude)
+            
+            setCoordinate(coordinate)
+      
+            //创建一个大头针对象
+            let objectAnnotation = MKPointAnnotation()
+            //设置大头针的显示位置
+            objectAnnotation.coordinate = coordinate
+            
+            //设置点击大头针之后显示的标题
+            objectAnnotation.title = "text_title_source_location".localized
+            //设置点击大头针之后显示的描述
+            objectAnnotation.subtitle = "text_subtitle_source_location".localized
+            //添加大头针
+            self.mapView.addAnnotation(objectAnnotation)
+            
+            
+            let center = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+            
+            self.mapView.setRegion(region, animated: true)
+            
         }
     }
     
