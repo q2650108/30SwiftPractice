@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2465861C1DC6DF10009E721B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2465861E1DC6DF10009E721B /* Main.storyboard */; };
+		246586231DC6DF79009E721B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 246586251DC6DF79009E721B /* InfoPlist.strings */; };
 		24D392741DB9B66100EB6088 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D392731DB9B66100EB6088 /* AppDelegate.swift */; };
 		24D392761DB9B66100EB6088 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D392751DB9B66100EB6088 /* ViewController.swift */; };
 		24D3927B1DB9B66100EB6088 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24D3927A1DB9B66100EB6088 /* Assets.xcassets */; };
 		24D3927E1DB9B66100EB6088 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D3927C1DB9B66100EB6088 /* LaunchScreen.storyboard */; };
-		24D392861DB9B69300EB6088 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24D392851DB9B69300EB6088 /* Main.storyboard */; };
 		24D392881DB9B6B200EB6088 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D392871DB9B6B200EB6088 /* MapKit.framework */; };
 		24D3928B1DB9D24F00EB6088 /* UIView+borderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */; };
-		D233A69E1DBC8A72001B7DF7 /* America.gpx in Resources */ = {isa = PBXBuildFile; fileRef = D233A69D1DBC8A72001B7DF7 /* America.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2465861B1DC6DE96009E721B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2465861D1DC6DF10009E721B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		246586201DC6DF13009E721B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		246586241DC6DF79009E721B /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		24D392701DB9B66000EB6088 /* Project 06 - Get user's current location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 06 - Get user's current location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D392731DB9B66100EB6088 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24D392751DB9B66100EB6088 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		24D3927A1DB9B66100EB6088 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24D3927D1DB9B66100EB6088 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24D3927F1DB9B66100EB6088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24D392851DB9B69300EB6088 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24D392871DB9B6B200EB6088 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		24D3928A1DB9D24F00EB6088 /* UIView+borderStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+borderStyle.swift"; sourceTree = "<group>"; };
-		D233A69D1DBC8A72001B7DF7 /* America.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = America.gpx; path = "../../../../Downloads/GeoTargeting-demo-master/GeoTargeting/America.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		246586261DC6DFB3009E721B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				246586251DC6DF79009E721B /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		24D392671DB9B66000EB6088 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +72,11 @@
 		24D392721DB9B66100EB6088 /* Project 06 - Get user's current location */ = {
 			isa = PBXGroup;
 			children = (
-				D233A69D1DBC8A72001B7DF7 /* America.gpx */,
+				246586261DC6DFB3009E721B /* Resources */,
 				24D392891DB9D20000EB6088 /* extension */,
 				24D392731DB9B66100EB6088 /* AppDelegate.swift */,
 				24D392751DB9B66100EB6088 /* ViewController.swift */,
-				24D392851DB9B69300EB6088 /* Main.storyboard */,
+				2465861E1DC6DF10009E721B /* Main.storyboard */,
 				24D3927A1DB9B66100EB6088 /* Assets.xcassets */,
 				24D3927C1DB9B66100EB6088 /* LaunchScreen.storyboard */,
 				24D3927F1DB9B66100EB6088 /* Info.plist */,
@@ -130,6 +140,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 24D392671DB9B66000EB6088;
 			productRefGroup = 24D392711DB9B66000EB6088 /* Products */;
@@ -147,9 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D3927E1DB9B66100EB6088 /* LaunchScreen.storyboard in Resources */,
+				246586231DC6DF79009E721B /* InfoPlist.strings in Resources */,
 				24D3927B1DB9B66100EB6088 /* Assets.xcassets in Resources */,
-				D233A69E1DBC8A72001B7DF7 /* America.gpx in Resources */,
-				24D392861DB9B69300EB6088 /* Main.storyboard in Resources */,
+				2465861C1DC6DF10009E721B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,10 +180,28 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2465861E1DC6DF10009E721B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2465861D1DC6DF10009E721B /* Base */,
+				246586201DC6DF13009E721B /* zh-Hant */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		246586251DC6DF79009E721B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				246586241DC6DF79009E721B /* zh-Hant */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		24D3927C1DB9B66100EB6088 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				24D3927D1DB9B66100EB6088 /* Base */,
+				2465861B1DC6DE96009E721B /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

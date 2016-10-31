@@ -55,6 +55,23 @@ class ViewController: UIViewController {
     //=============================//
     
     @IBAction func buttonSearchTouchUpInside(sender: AnyObject) {
+        
+        
+        
+//        guard let textFieldLongitude.text?.isEmpty || textFieldLatitude.text?.isEmpty else {
+//            
+//            let alertController = UIAlertController(title: "Eorror", message:
+//                "Hello, world!", preferredStyle: UIAlertControllerStyle.Alert)
+//            alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default,handler: nil))
+//            
+//            self.presentViewController(alertController, animated: true, completion: nil)
+//            return
+//        }
+//        
+//        
+//        let newLocation = CLLocationCoordinate2D(latitude: , longitude: -73.984472)
+        
+        
     }
     
     @IBAction func buttonClearTouchUpInside(sender: AnyObject) {
@@ -70,6 +87,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         initUI()
         
+        /// Add Gesture
+        /// Dismiss the Keyboard
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapDismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -134,6 +155,7 @@ class ViewController: UIViewController {
         // 顯示自身定位位置
         self.mapView.showsUserLocation = true
         
+        /// Add Gesture - Long Press
         let longPressGesture = UILongPressGestureRecognizer(target: self, action:#selector(self.handleLongPress))
         longPressGesture.minimumPressDuration = 0.5
         longPressGesture.delaysTouchesBegan = true
@@ -165,10 +187,6 @@ class ViewController: UIViewController {
         objectAnnotation.subtitle = "就是現在位置"
         //添加大头针
         self.mapView.addAnnotation(objectAnnotation)
-        
-        
-        
-        
         
         //        let geoCoder = CLGeocoder()
         //
@@ -224,8 +242,6 @@ class ViewController: UIViewController {
         
         
         let geocoder = CLGeocoder()
-        
-        
         
         geocoder.reverseGeocodeLocation(getMovedMapCenter, completionHandler: {
             placemarks, error in
@@ -292,6 +308,14 @@ class ViewController: UIViewController {
     // MARK:      Public Func
     //=============================//
     
+    //==============================//
+    // MARK:      Gesture
+    //=============================//
+    
+    /// Dismiss the Keyboard
+    func handleTapDismissKeyboard(){
+        view.endEditing(true)
+    }
     
 }
 
