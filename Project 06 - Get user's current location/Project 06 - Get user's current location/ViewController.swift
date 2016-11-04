@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     private var currentCoordinate : CLLocationCoordinate2D?
     
     private let regionRadius: CLLocationDistance = 500
+    
+    private var points: [CLLocationCoordinate2D] = [CLLocationCoordinate2D]()
+    
+    private var tempTextString : String = ""
     //==============================//
     // MARK:     Public Property
     //=============================//
@@ -48,6 +52,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonClear: UIButton!
     
+    @IBOutlet weak var buttonRoute: UIButton!
+    
     @IBOutlet weak var mapView: MKMapView!
     
     //==============================//
@@ -56,29 +62,38 @@ class ViewController: UIViewController {
     
     @IBAction func buttonSearchTouchUpInside(sender: AnyObject) {
         
-        //        guard let coordinate = self.currentCoordinate else{
-        //            return
-        //        }
+        /// Only Use the Location
         
-        
-        
-        guard let longitude = textFieldLongitude where !(longitude.text?.isEmpty)! , let latitude = textFieldLatitude where !(latitude.text?.isEmpty)! else {
-            
-            let alertController = UIAlertController(title: "text_alert_title_coordinate_empty".localized,
-                                                    message:"text_alert_content_coordinate_empty".localized,
-                                                    preferredStyle: UIAlertControllerStyle.Alert)
-            alertController.addAction(UIAlertAction(title: "text_alert_button_ok".localized , style: UIAlertActionStyle.Default,handler: nil))
-            
-            self.presentViewController(alertController, animated: true, completion: nil)
+        guard let location = textFieldLocation.text where !location.isEmpty else {
+            print("location is Empty")
             return
         }
         
-        let coordinate = CLLocationCoordinate2D(latitude: Double(latitude.text!)! , longitude: Double(longitude.text!)! )
+        let geoCoder = CLGeocoder()
         
+        geoCoder.geocodeAddressString(location, completionHandler:  {
+            placemark ,error in
+            
+            guard let coordinate = placemark?.first?.location?.coordinate else{
+                return
+            }
+            
+            if let _ = error {
+                print(error)
+                return
+            }
+            
+            /// Update the Coordinate TextField
+            self.setCoordinate(coordinate)
+            /// Update the Location TextField
+            self.setLocation(coordinate)
+            /// Add the Annotation
+            self.addAnnotation(coordinate)
+        })
         
     }
     
-    @IBAction func buttonClearTouchUpInside(sender: AnyObject) {
+    @IBAction func buttonClearTouchUpInside(sender: AnyObject?) {
         
         let allAnnotations = self.mapView.annotations
         self.mapView.removeAnnotations(allAnnotations)
@@ -88,8 +103,58 @@ class ViewController: UIViewController {
         textFieldLocation.text = ""
         
         handleTapDismissKeyboard()
+        
+        self.mapView.removeOverlays(self.mapView.overlays)
+        
+        points.removeAll()
     }
     
+    
+    @IBAction func buttonRouteTouchUpInside(sender: AnyObject) {
+
+        points.append(currentCoordinate!)
+
+        calculateDirections(points)
+    }
+    
+    private func calculateDirections( points: [CLLocationCoordinate2D] ){
+        
+        for index in  0 ..< points.count - 1 {
+            
+            let sourcePlacemark = MKPlacemark(coordinate: points[ index ] , addressDictionary: nil)
+            let destinationPlacemark = MKPlacemark(coordinate: points[ index + 1 ] , addressDictionary: nil)
+            
+            let sourceMapItem = MKMapItem(placemark: sourcePlacemark)
+            let destinationMapItem = MKMapItem(placemark: destinationPlacemark)
+            
+            let directionRequest = MKDirectionsRequest()
+            directionRequest.source = sourceMapItem
+            directionRequest.destination = destinationMapItem
+            /// Transport Type
+            directionRequest.transportType = .Walking
+            
+            let directions = MKDirections(request: directionRequest)
+            
+            directions.calculateDirectionsWithCompletionHandler {
+                (response, error) -> Void in
+                
+                guard let response = response else {
+                    if let error = error {
+                        print("Error: \(error)")
+                    }
+                    
+                    return
+                }
+                
+                let route = response.routes[0]
+                self.mapView.addOverlay((route.polyline), level: MKOverlayLevel.AboveRoads)
+                
+                let rect = route.polyline.boundingMapRect
+                self.mapView.setRegion(MKCoordinateRegionForMapRect(rect), animated: true)
+            }
+        }
+        
+    }
     
     
     //==============================//
@@ -104,6 +169,9 @@ class ViewController: UIViewController {
         /// Dismiss the Keyboard
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTapDismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        
+        textFieldLocation.addTarget(self, action: #selector(handleEditingDidBegin), forControlEvents: UIControlEvents.EditingDidBegin)
     }
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -152,7 +220,7 @@ class ViewController: UIViewController {
         }
             // 2. 用戶不同意
         else if CLLocationManager.authorizationStatus() == .Denied {
-            //("Location services were previously denied. Please enable location services for this app in Settings.")
+            //print("Location services were previously denied. Please enable location services for this app in Settings.")
         }
             // 3. 用戶已經同意
         else if CLLocationManager.authorizationStatus() == .AuthorizedAlways {
@@ -173,7 +241,6 @@ class ViewController: UIViewController {
         longPressGesture.delaysTouchesBegan = true
         self.mapView.addGestureRecognizer(longPressGesture)
         
-        
         //case None    不跟踪用户的位置
         //case  Follow   跟踪并在地图上显示用户的当前位置
         //caseFollowWithHeading  跟踪并在地图上显示用户的当前位置，地图会跟随用户的前进方向进行旋转
@@ -184,56 +251,25 @@ class ViewController: UIViewController {
             return
         }
         
+        /// Update the Coordinate TextField
         setCoordinate(coordinate)
+        /// Update the Location TextField
         setLocation(coordinate)
-        
-        //        let geoCoder = CLGeocoder()
-        //
-        //        geoCoder.geocodeAddressString("板橋圖書館", completionHandler:  {
-        //            placemark ,error in
-        //
-        //            guard let coordinate = placemark?.first?.location?.coordinate else{
-        //                return
-        //            }
-        //
-        //
-        //            if let _ = error {
-        //                print(error)
-        //                return
-        //            }
-        //
-        //
-        //            let annotation = MKPointAnnotation()
-        //            annotation.title = "test place"
-        //            annotation.subtitle =  "Waikiki Gateway Park"
-        //            annotation.coordinate = coordinate
-        //
-        //            //self.mapView.mapType
-        //            //  MKMapType.Standard ：标准地图
-        //            //  MKMapType.Satellite ：卫星地图
-        //            //  MKMapType.Hybrid ：混合地图
-        //
-        //            self.mapView.showAnnotations([annotation], animated: true)
-        //            self.mapView.selectAnnotation(annotation, animated: true)
-        //            self.mapView.setRegion(self.getCoordinateRegion(coordinate), animated: true)
-        //
-        //            // 5. 繪製一個圓圈圖形（用於表示 region 的範圍）
-        //            let circle = MKCircle(centerCoordinate: coordinate, radius: self.regionRadius)
-        //            self.mapView.addOverlay(circle)
-        //
-        //        })
-        //
-        //
-        
         
     }
     
+    /// Update the Coordinate TextField
+    /// - parameters:
+    ///   - coordinate: Coordinate
     private func setCoordinate(currentCoordinate : CLLocationCoordinate2D){
         
         textFieldLongitude.text = "\(currentCoordinate.longitude)"
         textFieldLatitude.text = "\(currentCoordinate.latitude)"
     }
     
+    /// Update the Location TextField
+    /// - parameters:
+    ///   - coordinate: Coordinate
     private func setLocation(currentCoordinate : CLLocationCoordinate2D){
         
         
@@ -245,10 +281,8 @@ class ViewController: UIViewController {
         geocoder.reverseGeocodeLocation(getMovedMapCenter, completionHandler: {
             placemarks, error in
             
-            
-            if let _ = error  {
-                print(error)
-                return
+            if let error = error {
+                print("Error: \(error)")
             }
             
             let placeArray = placemarks as [CLPlacemark]!
@@ -282,13 +316,31 @@ class ViewController: UIViewController {
         
     }
     
-    
-    private func  getCoordinateRegion(coordinate: CLLocationCoordinate2D) -> MKCoordinateRegion{
-        return MKCoordinateRegionMakeWithDistance(coordinate,
-                                                  self.regionRadius * 2.0,
-                                                  self.regionRadius * 2.0)
+    /// Add Annotation and Focus the Annotation
+    /// - parameters:
+    ///   - coordinate: Coordinate
+    private func addAnnotation( coordinate : CLLocationCoordinate2D ) {
+        //创建一个大头针对象
+        let objectAnnotation = MKPointAnnotation()
+        //设置大头针的显示位置
+        objectAnnotation.coordinate = coordinate
+        
+        //设置点击大头针之后显示的标题
+        objectAnnotation.title = "text_title_source_location".localized
+        //设置点击大头针之后显示的描述
+        objectAnnotation.subtitle = "text_subtitle_source_location".localized
+        //添加大头针
+        self.mapView.addAnnotation(objectAnnotation)
+        
+        let center = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        
+        self.mapView.setRegion(region, animated: true)
     }
     
+    //==============================//
+    // MARK:      Public Func
+    //=============================//
     
     //==============================//
     // MARK:      Gesture
@@ -302,41 +354,44 @@ class ViewController: UIViewController {
             
             let coordinate = CLLocationCoordinate2D(latitude: locationCoordinate.latitude , longitude: locationCoordinate.longitude)
             
+            /// Update the Coordinate TextField
             setCoordinate(coordinate)
+            /// Update the Location TextField
             setLocation(coordinate)
+            /// Add the Annotation
+            addAnnotation(coordinate)
             
-            //创建一个大头针对象
-            let objectAnnotation = MKPointAnnotation()
-            //设置大头针的显示位置
-            objectAnnotation.coordinate = coordinate
-            
-            //设置点击大头针之后显示的标题
-            objectAnnotation.title = "text_title_source_location".localized
-            //设置点击大头针之后显示的描述
-            objectAnnotation.subtitle = "text_subtitle_source_location".localized
-            //添加大头针
-            self.mapView.addAnnotation(objectAnnotation)
-            
-            
-            let center = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
-            let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-            
-            self.mapView.setRegion(region, animated: true)
-            
+            points.append(coordinate)
         }
     }
     
-    //==============================//
-    // MARK:      Public Func
-    //=============================//
-    
-    //==============================//
-    // MARK:      Gesture
-    //=============================//
     
     /// Dismiss the Keyboard
     func handleTapDismissKeyboard(){
         view.endEditing(true)
+        
+        guard let location = self.textFieldLocation.text else {
+            return
+        }
+        
+        let trimLocation = location.stringByTrimmingCharactersInSet(
+            NSCharacterSet.whitespaceAndNewlineCharacterSet()
+        )
+        
+        /// when end Editing , user never key in , then recover the location
+        if trimLocation.isEmpty {
+            self.textFieldLocation.text = tempTextString
+            tempTextString = ""
+        }
+        
+    }
+    
+    
+    func handleEditingDidBegin( sender : UITextField ) {
+        /// back up in temp
+        tempTextString = sender.text ?? ""
+        /// clear the TextField
+        sender.text = ""
     }
     
 }
@@ -366,7 +421,8 @@ extension ViewController : CLLocationManagerDelegate {
         currentCoordinate = location.coordinate
         
         initMap()
-        locationManager = nil
+        
+        self.locationManager = nil
     }
 }
 
@@ -466,10 +522,21 @@ extension ViewController : MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
         //print("设置overlay的渲染")
-        let circleRenderer = MKCircleRenderer(overlay: overlay)
-        circleRenderer.strokeColor = UIColor.redColor()
-        circleRenderer.lineWidth = 1.0
-        return circleRenderer
+        let polylineRenderer = MKPolylineRenderer(overlay: overlay)
+        if (overlay is MKPolyline) {
+            if mapView.overlays.count == 1 {
+                polylineRenderer.strokeColor =
+                    UIColor.blueColor().colorWithAlphaComponent(0.75)
+            } else if mapView.overlays.count == 2 {
+                polylineRenderer.strokeColor =
+                    UIColor.greenColor().colorWithAlphaComponent(0.75)
+            } else if mapView.overlays.count == 3 {
+                polylineRenderer.strokeColor =
+                    UIColor.redColor().colorWithAlphaComponent(0.75)
+            }
+            polylineRenderer.lineWidth = 5
+        }
+        return polylineRenderer
     }
     
     func mapView(mapView: MKMapView, didAddOverlayRenderers renderers: [MKOverlayRenderer]) {
