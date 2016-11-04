@@ -172,11 +172,15 @@ class ViewController: UIViewController {
         //用户位置追踪(用户位置追踪用于标记用户当前位置，此时会调用定位服务)
         self.mapView.userTrackingMode = .Follow
         
+        guard let coordinate = self.currentCoordinate else {
+            return
+        }
+        
         setCoordinate(coordinate)
         setLocation(coordinate)
         
         //        let geoCoder = CLGeocoder()
-        //
+        //turn
         //        geoCoder.geocodeAddressString("板橋圖書館", completionHandler:  {
         //            placemark ,error in
         //
@@ -291,7 +295,7 @@ class ViewController: UIViewController {
             let coordinate = CLLocationCoordinate2D(latitude: locationCoordinate.latitude , longitude: locationCoordinate.longitude)
             
             setCoordinate(coordinate)
-      
+            
             //创建一个大头针对象
             let objectAnnotation = MKPointAnnotation()
             //设置大头针的显示位置
