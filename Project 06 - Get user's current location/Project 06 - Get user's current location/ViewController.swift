@@ -79,6 +79,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonClearTouchUpInside(sender: AnyObject) {
+        
+        let allAnnotations = self.mapView.annotations
+        self.mapView.removeAnnotations(allAnnotations)
+        
+        textFieldLongitude.text = ""
+        textFieldLatitude.text = ""
+        textFieldLocation.text = ""
+        
+        handleTapDismissKeyboard()
     }
     
     
@@ -154,7 +163,6 @@ class ViewController: UIViewController {
     
     private func initMap(){
         
-        
         self.mapView.delegate = self
         // 顯示自身定位位置
         self.mapView.showsUserLocation = true
@@ -171,6 +179,10 @@ class ViewController: UIViewController {
         //caseFollowWithHeading  跟踪并在地图上显示用户的当前位置，地图会跟随用户的前进方向进行旋转
         //用户位置追踪(用户位置追踪用于标记用户当前位置，此时会调用定位服务)
         self.mapView.userTrackingMode = .Follow
+        
+        guard let coordinate = self.currentCoordinate else{
+            return
+        }
         
         setCoordinate(coordinate)
         setLocation(coordinate)
@@ -291,7 +303,8 @@ class ViewController: UIViewController {
             let coordinate = CLLocationCoordinate2D(latitude: locationCoordinate.latitude , longitude: locationCoordinate.longitude)
             
             setCoordinate(coordinate)
-      
+            setLocation(coordinate)
+            
             //创建一个大头针对象
             let objectAnnotation = MKPointAnnotation()
             //设置大头针的显示位置
