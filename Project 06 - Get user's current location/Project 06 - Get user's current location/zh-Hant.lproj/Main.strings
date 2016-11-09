@@ -1,0 +1,21 @@
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "EJm-bT-bBO"; */
+"EJm-bT-bBO.normalTitle" = "清除";
+
+/* Class = "UILabel"; text = "Longitude"; ObjectID = "ITj-Gk-oAD"; */
+"ITj-Gk-oAD.text" = "經度";
+
+/* Class = "UIButton"; normalTitle = "Search"; ObjectID = "ZrG-jk-iw4"; */
+"ZrG-jk-iw4.normalTitle" = "搜尋";
+
+/* Class = "UIButton"; normalTitle = "Route"; ObjectID = "uMt-Ky-EHn"; */
+"uMt-Ky-EHn.normalTitle" = "規劃";
+
+/* Class = "UIButton"; normalTitle = "Route"; ObjectID = "Ogw-Es-473"; */
+"Ogw-Es-473.normalTitle" = "儲存";
+
+/* Class = "UILabel"; text = "Latitude"; ObjectID = "atc-M6-9bp"; */
+"atc-M6-9bp.text" = "緯度";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "nDx-Ec-oIK"; */
+"nDx-Ec-oIK.text" = "位置";

@@ -1,0 +1,14 @@
+/* No Localized Strings */
+
+"text_title_source_location" = "Source Location Title";
+"text_subtitle_source_location" = "Source Location Subtitle";
+
+"text_title_destination_location" = "Destination Location Title";
+"text_subtitle_destination_location" = "Destination Location Subtitle";
+
+
+"text_alert_title_coordinate_empty" = "Coordinate Error";
+"text_alert_content_coordinate_empty" = "Can not be empty";
+
+
+"text_alert_button_ok" = "Ok";
