@@ -54,6 +54,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonRoute: UIButton!
     
+    @IBOutlet weak var buttonSave: UIButton!
+    
     @IBOutlet weak var mapView: MKMapView!
     
     //==============================//
@@ -68,7 +70,7 @@ class ViewController: UIViewController {
             print("location is Empty")
             return
         }
-        
+  
         let geoCoder = CLGeocoder()
         
         geoCoder.geocodeAddressString(location, completionHandler:  {
@@ -111,10 +113,28 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonRouteTouchUpInside(sender: AnyObject) {
-
-        points.append(currentCoordinate!)
-
+        
+        if let currentCoordinate = self.currentCoordinate {
+            points.insert(currentCoordinate , atIndex: 0)
+            
+            points.append(currentCoordinate)
+        }
+        
         calculateDirections(points)
+    }
+    
+    @IBAction func buttonSaveTouchUpInside(sender: AnyObject) {
+        
+        guard let latitude =  Double(textFieldLatitude.text!) , let longitude =  Double(textFieldLongitude.text!) else {
+            return
+        }
+        
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        
+        /// Add the Annotation
+        addAnnotation(coordinate)
+        
+        points.append(coordinate)
     }
     
     private func calculateDirections( points: [CLLocationCoordinate2D] ){
@@ -288,8 +308,12 @@ class ViewController: UIViewController {
             let placeArray = placemarks as [CLPlacemark]!
             
             // Place details
-            var placeMark: CLPlacemark!
-            placeMark = placeArray?[0]
+            var _placeMark: CLPlacemark!
+            _placeMark = placeArray?[0]
+            
+            guard let placeMark = _placeMark else {
+                return
+            }
             
             // Address dictionary
             //print(placeMark.addressDictionary)
@@ -322,6 +346,7 @@ class ViewController: UIViewController {
     private func addAnnotation( coordinate : CLLocationCoordinate2D ) {
         //创建一个大头针对象
         let objectAnnotation = MKPointAnnotation()
+        
         //设置大头针的显示位置
         objectAnnotation.coordinate = coordinate
         
@@ -336,6 +361,16 @@ class ViewController: UIViewController {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         self.mapView.setRegion(region, animated: true)
+    }
+    
+    
+    private func getRandomColor() -> UIColor{
+        //Generate between 0 to 1
+        let red:CGFloat = CGFloat(drand48())
+        let green:CGFloat = CGFloat(drand48())
+        let blue:CGFloat = CGFloat(drand48())
+        
+        return UIColor(red:red, green: green, blue: blue, alpha: 1.0)
     }
     
     //==============================//
@@ -358,10 +393,6 @@ class ViewController: UIViewController {
             setCoordinate(coordinate)
             /// Update the Location TextField
             setLocation(coordinate)
-            /// Add the Annotation
-            addAnnotation(coordinate)
-            
-            points.append(coordinate)
         }
     }
     
@@ -524,16 +555,9 @@ extension ViewController : MKMapViewDelegate {
         //print("设置overlay的渲染")
         let polylineRenderer = MKPolylineRenderer(overlay: overlay)
         if (overlay is MKPolyline) {
-            if mapView.overlays.count == 1 {
-                polylineRenderer.strokeColor =
-                    UIColor.blueColor().colorWithAlphaComponent(0.75)
-            } else if mapView.overlays.count == 2 {
-                polylineRenderer.strokeColor =
-                    UIColor.greenColor().colorWithAlphaComponent(0.75)
-            } else if mapView.overlays.count == 3 {
-                polylineRenderer.strokeColor =
-                    UIColor.redColor().colorWithAlphaComponent(0.75)
-            }
+            
+            
+            polylineRenderer.strokeColor = getRandomColor().colorWithAlphaComponent(0.75)
             polylineRenderer.lineWidth = 5
         }
         return polylineRenderer

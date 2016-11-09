@@ -11,6 +11,9 @@
 /* Class = "UIButton"; normalTitle = "Route"; ObjectID = "uMt-Ky-EHn"; */
 "uMt-Ky-EHn.normalTitle" = "規劃";
 
+/* Class = "UIButton"; normalTitle = "Route"; ObjectID = "Ogw-Es-473"; */
+"Ogw-Es-473.normalTitle" = "儲存";
+
 /* Class = "UILabel"; text = "Latitude"; ObjectID = "atc-M6-9bp"; */
 "atc-M6-9bp.text" = "緯度";
 
