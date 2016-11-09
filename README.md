@@ -60,7 +60,7 @@ what did i learn from this practice ?
  * use the NSNotificationCenter to detect the AVPlayer Did Finish Playing
 ```
 
-### Project 04 - [SnapChatMenu](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2004%20-%20SnapChatMenu)
+### Project 04 - [Project 06 - Get user's current location](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2004%20-%20SnapChatMenu)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2004%20-%20SnapChatMenu/4_1.gif?raw=true)
 <br />
@@ -86,4 +86,22 @@ what did i learn from this practice ?
  
  * Collection view and Custom cell
  * Visual Effect View Blur and Vibrancy
+```
+
+### Project 06 - [CarouselEffect](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2006%20-%20Get%20user's%20current%20location)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2006%20-%20Get%20user's%20current%20location/6_1.gif?raw=true)
+<br />
+<br />
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2006%20-%20Get%20user's%20current%20location/6_2.gif?raw=true)
+
+
+```
+what did i learn from this practice ? 
+ 
+ * MapView , Mapkit
+ * Add the Annotation , search location by geocodeAddressString or coordinate and Draw the route
+ * Use the CLLocationManager to get user Location
+ * Add the .Gpx to simulate Location
+ * Add the Localization ( Support the English and Chinese )
 ```
