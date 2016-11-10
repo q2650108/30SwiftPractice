@@ -60,7 +60,7 @@ what did i learn from this practice ?
  * use the NSNotificationCenter to detect the AVPlayer Did Finish Playing
 ```
 
-### Project 04 - [Project 06 - Get user's current location](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2004%20-%20SnapChatMenu)
+### Project 04 - [Get user's current location](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2004%20-%20SnapChatMenu)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2004%20-%20SnapChatMenu/4_1.gif?raw=true)
 <br />
@@ -105,3 +105,20 @@ what did i learn from this practice ?
  * Add the .Gpx to simulate Location
  * Add the Localization ( Support the English and Chinese )
 ```
+
+### Project 07 - [PullToRefresh](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2007%20-%20PullToRefresh)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2007%20-%20PullToRefresh/7_1.gif?raw=true)
+<br />
+
+
+```
+what did i learn from this practice ? 
+ 
+ * UIRefreshControl
+ * UIView.animateWithDuration
+ * transform
+
+```
+
+Project 07 - PullToRefresh
