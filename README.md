@@ -121,4 +121,16 @@ what did i learn from this practice ?
 
 ```
 
-Project 07 - PullToRefresh
+### Project 08 - [RandomGradientColorMusic](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2008%20-%20RandomGradientColorMusic)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2007%20-%20PullToRefresh/7_1.gif?raw=true)
+<br />
+
+
+```
+what did i learn from this practice ? 
+ 
+ * CAGradientLayer
+ * Slider
+
+```
