@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24C4B7051DDDA0EF009339ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4B7041DDDA0EF009339ED /* AppDelegate.swift */; };
+		24C4B7071DDDA0EF009339ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C4B7061DDDA0EF009339ED /* ViewController.swift */; };
+		24C4B70A1DDDA0EF009339ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C4B7081DDDA0EF009339ED /* Main.storyboard */; };
+		24C4B70C1DDDA0EF009339ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C4B70B1DDDA0EF009339ED /* Assets.xcassets */; };
+		24C4B70F1DDDA0EF009339ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C4B70D1DDDA0EF009339ED /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24C4B7011DDDA0EF009339ED /* Project 09 - ImageScroller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 09 - ImageScroller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C4B7041DDDA0EF009339ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24C4B7061DDDA0EF009339ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24C4B7091DDDA0EF009339ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24C4B70B1DDDA0EF009339ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24C4B70E1DDDA0EF009339ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24C4B7101DDDA0EF009339ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24C4B6FE1DDDA0EF009339ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24C4B6F81DDDA0EE009339ED = {
+			isa = PBXGroup;
+			children = (
+				24C4B7031DDDA0EF009339ED /* Project 09 - ImageScroller */,
+				24C4B7021DDDA0EF009339ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24C4B7021DDDA0EF009339ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C4B7011DDDA0EF009339ED /* Project 09 - ImageScroller.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C4B7031DDDA0EF009339ED /* Project 09 - ImageScroller */ = {
+			isa = PBXGroup;
+			children = (
+				24C4B7041DDDA0EF009339ED /* AppDelegate.swift */,
+				24C4B7061DDDA0EF009339ED /* ViewController.swift */,
+				24C4B7081DDDA0EF009339ED /* Main.storyboard */,
+				24C4B70B1DDDA0EF009339ED /* Assets.xcassets */,
+				24C4B70D1DDDA0EF009339ED /* LaunchScreen.storyboard */,
+				24C4B7101DDDA0EF009339ED /* Info.plist */,
+			);
+			path = "Project 09 - ImageScroller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24C4B7001DDDA0EF009339ED /* Project 09 - ImageScroller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C4B7131DDDA0EF009339ED /* Build configuration list for PBXNativeTarget "Project 09 - ImageScroller" */;
+			buildPhases = (
+				24C4B6FD1DDDA0EF009339ED /* Sources */,
+				24C4B6FE1DDDA0EF009339ED /* Frameworks */,
+				24C4B6FF1DDDA0EF009339ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 09 - ImageScroller";
+			productName = "Project 09 - ImageScroller";
+			productReference = 24C4B7011DDDA0EF009339ED /* Project 09 - ImageScroller.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24C4B6F91DDDA0EE009339ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = q2650108;
+				TargetAttributes = {
+					24C4B7001DDDA0EF009339ED = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 24C4B6FC1DDDA0EE009339ED /* Build configuration list for PBXProject "Project 09 - ImageScroller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24C4B6F81DDDA0EE009339ED;
+			productRefGroup = 24C4B7021DDDA0EF009339ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24C4B7001DDDA0EF009339ED /* Project 09 - ImageScroller */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24C4B6FF1DDDA0EF009339ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C4B70F1DDDA0EF009339ED /* LaunchScreen.storyboard in Resources */,
+				24C4B70C1DDDA0EF009339ED /* Assets.xcassets in Resources */,
+				24C4B70A1DDDA0EF009339ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24C4B6FD1DDDA0EF009339ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C4B7071DDDA0EF009339ED /* ViewController.swift in Sources */,
+				24C4B7051DDDA0EF009339ED /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24C4B7081DDDA0EF009339ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C4B7091DDDA0EF009339ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24C4B70D1DDDA0EF009339ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C4B70E1DDDA0EF009339ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24C4B7111DDDA0EF009339ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24C4B7121DDDA0EF009339ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24C4B7141DDDA0EF009339ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 09 - ImageScroller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.q2650108.Project-09---ImageScroller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		24C4B7151DDDA0EF009339ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Project 09 - ImageScroller/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.q2650108.Project-09---ImageScroller";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24C4B6FC1DDDA0EE009339ED /* Build configuration list for PBXProject "Project 09 - ImageScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C4B7111DDDA0EF009339ED /* Debug */,
+				24C4B7121DDDA0EF009339ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C4B7131DDDA0EF009339ED /* Build configuration list for PBXNativeTarget "Project 09 - ImageScroller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C4B7141DDDA0EF009339ED /* Debug */,
+				24C4B7151DDDA0EF009339ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24C4B6F91DDDA0EE009339ED /* Project object */;
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_09___ImageScroller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Mr-1l-70b" userLabel="ImageViewBackGround">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYQ-qG-wQL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gsR-yF-k6F">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npv-Xb-eLd">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italian-landscape-mountains-nature" translatesAutoresizingMaskIntoConstraints="NO" id="H9t-QA-oHp" userLabel="imageViewContent">
+                                        <rect key="frame" x="0.0" y="0.0" width="1280" height="853"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="H9t-QA-oHp" secondAttribute="bottom" id="8qq-tP-IxL"/>
+                                    <constraint firstItem="H9t-QA-oHp" firstAttribute="leading" secondItem="Npv-Xb-eLd" secondAttribute="leading" id="O88-ld-sGX"/>
+                                    <constraint firstItem="H9t-QA-oHp" firstAttribute="top" secondItem="Npv-Xb-eLd" secondAttribute="top" id="a90-Op-1J1"/>
+                                    <constraint firstAttribute="trailing" secondItem="H9t-QA-oHp" secondAttribute="trailing" id="nic-v2-VR9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Mr-1l-70b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4c5-32-ngN"/>
+                            <constraint firstItem="0Mr-1l-70b" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="9Br-O0-psf"/>
+                            <constraint firstItem="xYQ-qG-wQL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JbD-li-X50"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Npv-Xb-eLd" secondAttribute="trailing" id="Ji7-LS-UX9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Npv-Xb-eLd" secondAttribute="bottom" id="Wsk-GP-We1"/>
+                            <constraint firstItem="0Mr-1l-70b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YLn-X9-gW8"/>
+                            <constraint firstItem="0Mr-1l-70b" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Zbt-W8-npX"/>
+                            <constraint firstItem="xYQ-qG-wQL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cnU-g1-wVV"/>
+                            <constraint firstItem="Npv-Xb-eLd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="heo-5h-Ol5"/>
+                            <constraint firstItem="xYQ-qG-wQL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ilT-3w-o7E"/>
+                            <constraint firstItem="Npv-Xb-eLd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qFM-jF-VIU"/>
+                            <constraint firstItem="xYQ-qG-wQL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="yy0-PV-7Io"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewContent" destination="H9t-QA-oHp" id="eie-84-ibC"/>
+                        <outlet property="scrollView" destination="Npv-Xb-eLd" id="DtD-Mw-rky"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="italian-landscape-mountains-nature" width="1280" height="853"/>
+    </resources>
+</document>
