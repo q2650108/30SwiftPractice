@@ -147,3 +147,20 @@ what did i learn from this practice ?
  * UIScrollView - viewForZoomingInScrollView
 
 ```
+### Project 10 - [VideoBackground](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2010%20-%20VideoBackground)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2010%20-%20VideoBackground/10_1.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2010%20-%20VideoBackground/10_2.gif?raw=true)
+<br />
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2010%20-%20VideoBackground/10_3.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2010%20-%20VideoBackground/10_4.gif?raw=true)
+<br />
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2010%20-%20VideoBackground/10_5.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+ 
+ * Use the AVPlayerLayer to create some custom media player
+
+```
