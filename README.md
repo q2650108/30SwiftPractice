@@ -164,3 +164,15 @@ what did i learn from this practice ?
  * Use the AVPlayerLayer to create some custom media player
 
 ```
+### Project 11 - [ClearTableViewCell](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2011%20-%20ClearTableViewCell)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2011%20-%20ClearTableViewCell/11_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * UITableViewDelegate - willDisplayCell
+ * layoutSubviews
+
+```
