@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     //==============================//
     // MARK:     Pirvate Property
     //=============================//
-    private var loadingStatus : Bool = false
     
     private var timer : NSTimer = NSTimer()
     
@@ -36,18 +35,16 @@ class ViewController: UIViewController {
     //=============================//
     
     @IBAction func buttonLoginTouchUpInside(sender: AnyObject) {
-        if !loadingStatus {
-            loadingStatus = true
-            customLoadingView = CustomLoadingView()
-            customLoadingView?.show()
-            buttonLogin.titleLabel?.text = "Loading ..."
-            
-            /// Simulate the api response , when 8 sec later
-            NSTimer.scheduledTimerWithTimeInterval( 8 ,
-                                                    target:self,selector:#selector(self.handleTimer),
-                                                    userInfo:nil,repeats:false)
-            
-        }
+        buttonLogin.setTitle("Loading ...", forState: .Normal)
+        
+        customLoadingView = CustomLoadingView()
+        customLoadingView?.show()
+        
+        
+        /// Simulate the api response , when 8 sec later
+        NSTimer.scheduledTimerWithTimeInterval( 8 ,
+                                                target:self,selector:#selector(self.handleTimer),
+                                                userInfo:nil,repeats:false)
     }
     
     
@@ -88,12 +85,11 @@ class ViewController: UIViewController {
     
     /// Simulate the api response
     func handleTimer(){
- 
-        loadingStatus = false
+               buttonLogin.setTitle("Sign In", forState: .Normal)
         customLoadingView?.remove()
         customLoadingView = nil
         stopTimer()
-
+        
     }
     
     
