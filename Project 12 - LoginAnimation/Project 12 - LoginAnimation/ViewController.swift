@@ -42,7 +42,8 @@ class ViewController: UIViewController {
             customLoadingView?.show()
             buttonLogin.titleLabel?.text = "Loading ..."
             
-            NSTimer.scheduledTimerWithTimeInterval( 1 ,
+            /// Simulate the api response , when 8 sec later
+            NSTimer.scheduledTimerWithTimeInterval( 8 ,
                                                     target:self,selector:#selector(self.handleTimer),
                                                     userInfo:nil,repeats:false)
             
@@ -85,6 +86,7 @@ class ViewController: UIViewController {
     // MARK:      Timer selector Hadle
     //=============================//
     
+    /// Simulate the api response
     func handleTimer(){
  
         loadingStatus = false
@@ -92,7 +94,6 @@ class ViewController: UIViewController {
         customLoadingView = nil
         stopTimer()
 
-        self.navigationController?.popViewControllerAnimated(true)
     }
     
     
