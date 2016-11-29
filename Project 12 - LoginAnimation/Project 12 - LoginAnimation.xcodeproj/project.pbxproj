@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		247333A31DEBC47E0039B1DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333A21DEBC47E0039B1DE /* AppDelegate.swift */; };
-		247333A51DEBC47E0039B1DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333A41DEBC47E0039B1DE /* ViewController.swift */; };
+		247333A51DEBC47E0039B1DE /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333A41DEBC47E0039B1DE /* SecondVC.swift */; };
 		247333A81DEBC47E0039B1DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247333A61DEBC47E0039B1DE /* Main.storyboard */; };
 		247333AA1DEBC47E0039B1DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 247333A91DEBC47E0039B1DE /* Assets.xcassets */; };
 		247333AD1DEBC47E0039B1DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 247333AB1DEBC47E0039B1DE /* LaunchScreen.storyboard */; };
-		247333B71DEC14BF0039B1DE /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333B61DEC14BF0039B1DE /* CustomLoadingView.swift */; };
-		247333BA1DEC2FED0039B1DE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333B91DEC2FED0039B1DE /* LoginVC.swift */; };
+		247333B71DEC14BF0039B1DE /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333B61DEC14BF0039B1DE /* LoadingView.swift */; };
+		247333BA1DEC2FED0039B1DE /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333B91DEC2FED0039B1DE /* FirstVC.swift */; };
+		247333BD1DED77C70039B1DE /* RippleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333BC1DED77C70039B1DE /* RippleView.swift */; };
+		247333BF1DED78B60039B1DE /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247333BE1DED78B60039B1DE /* ThirdVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2473339F1DEBC47E0039B1DE /* Project 12 - LoginAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 12 - LoginAnimation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		247333A21DEBC47E0039B1DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		247333A41DEBC47E0039B1DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		247333A41DEBC47E0039B1DE /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		247333A71DEBC47E0039B1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		247333A91DEBC47E0039B1DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		247333AC1DEBC47E0039B1DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		247333AE1DEBC47E0039B1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		247333B61DEC14BF0039B1DE /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
-		247333B91DEC2FED0039B1DE /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		247333B61DEC14BF0039B1DE /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		247333B91DEC2FED0039B1DE /* FirstVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		247333BC1DED77C70039B1DE /* RippleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RippleView.swift; sourceTree = "<group>"; };
+		247333BE1DED78B60039B1DE /* ThirdVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,9 @@
 		247333A11DEBC47E0039B1DE /* Project 12 - LoginAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				247333BB1DED740C0039B1DE /* VC */,
 				247333B81DEC14C30039B1DE /* CustomView */,
 				247333A21DEBC47E0039B1DE /* AppDelegate.swift */,
-				247333B91DEC2FED0039B1DE /* LoginVC.swift */,
-				247333A41DEBC47E0039B1DE /* ViewController.swift */,
 				247333A61DEBC47E0039B1DE /* Main.storyboard */,
 				247333A91DEBC47E0039B1DE /* Assets.xcassets */,
 				247333AB1DEBC47E0039B1DE /* LaunchScreen.storyboard */,
@@ -73,9 +76,20 @@
 		247333B81DEC14C30039B1DE /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				247333B61DEC14BF0039B1DE /* CustomLoadingView.swift */,
+				247333B61DEC14BF0039B1DE /* LoadingView.swift */,
+				247333BC1DED77C70039B1DE /* RippleView.swift */,
 			);
 			name = CustomView;
+			sourceTree = "<group>";
+		};
+		247333BB1DED740C0039B1DE /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				247333B91DEC2FED0039B1DE /* FirstVC.swift */,
+				247333A41DEBC47E0039B1DE /* SecondVC.swift */,
+				247333BE1DED78B60039B1DE /* ThirdVC.swift */,
+			);
+			name = VC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				247333A51DEBC47E0039B1DE /* ViewController.swift in Sources */,
-				247333B71DEC14BF0039B1DE /* CustomLoadingView.swift in Sources */,
-				247333BA1DEC2FED0039B1DE /* LoginVC.swift in Sources */,
+				247333BF1DED78B60039B1DE /* ThirdVC.swift in Sources */,
+				247333BD1DED77C70039B1DE /* RippleView.swift in Sources */,
+				247333A51DEBC47E0039B1DE /* SecondVC.swift in Sources */,
+				247333B71DEC14BF0039B1DE /* LoadingView.swift in Sources */,
+				247333BA1DEC2FED0039B1DE /* FirstVC.swift in Sources */,
 				247333A31DEBC47E0039B1DE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

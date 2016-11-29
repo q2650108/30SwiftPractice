@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SecondVC.swift
 //  Project 12 - LoginAnimation
 //
 //  Created by SHUN on 11/28/16.
@@ -8,14 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SecondVC: UIViewController {
     //==============================//
     // MARK:     Pirvate Property
     //=============================//
     
-    private var timer : NSTimer = NSTimer()
-    
-    private var customLoadingView : CustomLoadingView?
+    private var loadingView : LoadingView?
     
     //==============================//
     // MARK:     Public Property
@@ -27,18 +25,18 @@ class ViewController: UIViewController {
     // MARK:     Layout Property
     //=============================//
     
-    @IBOutlet weak var buttonLogin: UIButton!
+    @IBOutlet weak var buttonNext: UIButton!
     
     
     //==============================//
     // MARK:     Action
     //=============================//
     
-    @IBAction func buttonLoginTouchUpInside(sender: AnyObject) {
-        buttonLogin.setTitle("Loading ...", forState: .Normal)
+    @IBAction func buttonNextTouchUpInside(sender: AnyObject) {
+        buttonNext.setTitle("Loading ...", forState: .Normal)
         
-        customLoadingView = CustomLoadingView()
-        customLoadingView?.show()
+        loadingView = LoadingView()
+        loadingView?.show()
         
         
         /// Simulate the api response , when 8 sec later
@@ -48,6 +46,8 @@ class ViewController: UIViewController {
     }
     
     
+    
+    
     //==============================//
     // MARK:     Life Cycle
     //=============================//
@@ -55,6 +55,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        initValue()
         //print("viewDidLoad")
     }
     
@@ -80,16 +81,15 @@ class ViewController: UIViewController {
     }
     
     //==============================//
-    // MARK:      Timer selector Hadle
+    // MARK:     Hadle - Timer selector 
     //=============================//
     
     /// Simulate the api response
     func handleTimer(){
-               buttonLogin.setTitle("Sign In", forState: .Normal)
-        customLoadingView?.remove()
-        customLoadingView = nil
-        stopTimer()
-        
+        buttonNext.setTitle("Go Third VC", forState: .Normal)
+        loadingView?.remove()
+        loadingView = nil
+        self.performSegueWithIdentifier("showThird", sender: nil)
     }
     
     
@@ -97,10 +97,12 @@ class ViewController: UIViewController {
     // MARK:      Private Func
     //=============================//
     
-    private func stopTimer(){
-        timer.invalidate()
+    private func initValue(){
+        buttonNext.layer.cornerRadius = 0.5 * buttonNext.bounds.size.width
+        buttonNext.clipsToBounds = true
+        
     }
-    
+
     //==============================//
     // MARK:      Public Func
     //=============================//

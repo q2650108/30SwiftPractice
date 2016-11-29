@@ -1,5 +1,5 @@
 //
-//  CustomLoadingView.swift
+//  LoadingView.swift
 //  Project 12 - LoginAnimation
 //
 //  Created by SHUN on 11/28/16.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class  CustomLoadingView  {
+class  LoadingView  : NSObject   {
     
     //==============================//
     // MARK:     Pirvate Property
     //=============================//
     
-    private let replicatorLayer = CAReplicatorLayer()
+    private var replicatorLayer : CAReplicatorLayer?
     
     private var loadingMaskView : UIView?
     
@@ -22,8 +22,8 @@ class  CustomLoadingView  {
     // MARK:     Life Cycle
     //=============================//
     
-    init(){
-         print("\(self.dynamicType) init")
+    override init(){
+        print("\(self.dynamicType) init")
     }
     
     deinit{
@@ -38,7 +38,7 @@ class  CustomLoadingView  {
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let keyWindow = appDelegate.window!
-     
+        
         let mainScreen = UIScreen.mainScreen()
         
         let side : CGFloat  = 160
@@ -70,37 +70,41 @@ class  CustomLoadingView  {
         //        transformAnim.repeatCount = HUGE
         //        transformAnim.fromValue = NSValue.init(CATransform3D: CATransform3DMakeScale(1, 1, 1))
         //        transformAnim.toValue = NSValue.init(CATransform3D: CATransform3DMakeScale(0.7, 0.7, 0.1))
-
+        
         animationGroup.animations = [ positionformAnim , scaleAnimation ]
         
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.backgroundColor = UIColor.whiteColor().CGColor
+        shapeLayer.bounds = CGRectMake( 0 , 0 , 20 , 20 )
+        shapeLayer.position = CGPointMake( -side  , -side )
+        shapeLayer.cornerRadius = 10
+        shapeLayer.addAnimation(animationGroup, forKey: nil)
         
-        let animationLayer = CAShapeLayer()
-        animationLayer.backgroundColor = UIColor.whiteColor().CGColor
-        animationLayer.bounds = CGRectMake(0, 0, 20, 20)
-        animationLayer.cornerRadius = 10
-        animationLayer.addAnimation(animationGroup, forKey: nil)
+        replicatorLayer = CAReplicatorLayer()
+        guard let _replicatorLayer = replicatorLayer else {
+            return
+        }
+        _replicatorLayer.addSublayer(shapeLayer)
         
-        
-        replicatorLayer.addSublayer(animationLayer);
-        replicatorLayer.repeatCount = HUGE
-        replicatorLayer.instanceCount = 6
-        replicatorLayer.instanceDelay = 0.2
-        replicatorLayer.instanceColor = UIColor.blackColor().CGColor
-        replicatorLayer.instanceRedOffset = 0.0
-        replicatorLayer.instanceGreenOffset = 0.0
-        replicatorLayer.instanceBlueOffset = 0.0
-        replicatorLayer.instanceAlphaOffset = -0.1
+        _replicatorLayer.repeatCount = HUGE
+        _replicatorLayer.instanceCount = 6
+        _replicatorLayer.instanceDelay = 0.2
+        _replicatorLayer.instanceColor = UIColor.blackColor().CGColor
+        _replicatorLayer.instanceRedOffset = 0.0
+        _replicatorLayer.instanceGreenOffset = 0.0
+        _replicatorLayer.instanceBlueOffset = 0.0
+        _replicatorLayer.instanceAlphaOffset = -0.1
         
         loadingMaskView = UIView(frame: CGRectMake(0, 0, mainScreen.bounds.width, mainScreen.bounds.height))
         loadingMaskView!.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
         keyWindow.addSubview(loadingMaskView!)
-        keyWindow.layer.addSublayer(replicatorLayer)
+        keyWindow.layer.addSublayer(_replicatorLayer)
         
     }
     
     func remove() {
         if let loadingView = self.loadingMaskView{
-            replicatorLayer.sublayers?.forEach({
+            replicatorLayer?.sublayers?.forEach({
                 $0.sublayers?.forEach({
                     $0.removeAllAnimations()
                     $0.removeFromSuperlayer()
@@ -110,10 +114,9 @@ class  CustomLoadingView  {
                 $0.removeFromSuperlayer()
             })
             
-            replicatorLayer.removeFromSuperlayer()
+            replicatorLayer?.removeFromSuperlayer()
             loadingView.removeFromSuperview()
         }
-        
-
     }
+    
 }
