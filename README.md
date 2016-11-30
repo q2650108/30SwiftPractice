@@ -88,7 +88,7 @@ what did i learn from this practice ?
  * Visual Effect View Blur and Vibrancy
 ```
 
-### Project 06 - [CarouselEffect](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2006%20-%20Get%20user's%20current%20location)
+### Project 06 - [FindMyLocation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2006%20-%20Get%20user's%20current%20location)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2006%20-%20Get%20user's%20current%20location/6_1.gif?raw=true)
 <br />
