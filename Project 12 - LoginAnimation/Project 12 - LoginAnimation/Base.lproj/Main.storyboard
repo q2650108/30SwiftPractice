@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zve-1u-mgj">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--SecondVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SecondVC" customModule="Project_12___LoginAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="view">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2D-Dx-WtQ" userLabel="viewBackGround">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6U-uv-LDJ" userLabel="buttonNext">
+                                <rect key="frame" x="210" y="210" width="180" height="180"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M6U-uv-LDJ" secondAttribute="height" multiplier="1:1" id="ABX-lh-w2x"/>
+                                    <constraint firstAttribute="width" constant="180" id="oo6-b8-Khz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Go Third VC">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonNextTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yFF-Mj-GcE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="M6U-uv-LDJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Uv-QI-tv5"/>
+                            <constraint firstItem="A2D-Dx-WtQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Ntc-SO-LbB"/>
+                            <constraint firstItem="A2D-Dx-WtQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ogv-ah-dXw"/>
+                            <constraint firstItem="A2D-Dx-WtQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T8y-R2-YDm"/>
+                            <constraint firstItem="A2D-Dx-WtQ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="p8T-kR-hRG"/>
+                            <constraint firstItem="M6U-uv-LDJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rnL-6T-fj8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AHE-Z9-ou8"/>
+                    <connections>
+                        <outlet property="buttonNext" destination="M6U-uv-LDJ" id="Kqf-ui-sCF"/>
+                        <segue destination="J0e-hy-4hS" kind="show" identifier="showThird" id="ElU-2x-8ow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2192" y="1154"/>
+        </scene>
+        <!--Tap the View to see the Ripple Animation-->
+        <scene sceneID="wHc-yT-qUC">
+            <objects>
+                <viewController title="Tap the View to see the Ripple Animation" id="J0e-hy-4hS" customClass="ThirdVC" customModule="Project_12___LoginAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Gi-2d-8xf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yao-DV-oQ9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o1R-mF-iwf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Gbc-wd-QAY" appends="YES" id="ceA-GQ-Qwy"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mBu-Hi-Vlj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gbc-wd-QAY">
+                    <connections>
+                        <action selector="handleTapView:" destination="J0e-hy-4hS" id="xeQ-ve-lTE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2918" y="1154"/>
+        </scene>
+        <!--FirstVC-->
+        <scene sceneID="3Ho-Ef-HRz">
+            <objects>
+                <viewController id="gpj-YE-yG5" customClass="FirstVC" customModule="Project_12___LoginAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s7s-V8-sxG"/>
+                        <viewControllerLayoutGuide type="bottom" id="VnM-jM-HVI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qe2-Nt-r1r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-6E-JIO" userLabel="ButtonNext">
+                                <rect key="frame" x="210" y="420" width="180" height="180"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SB6-6E-JIO" secondAttribute="height" multiplier="1:1" id="Vjn-k2-FTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Go Second VC">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ButtonNextTouchUpInside:" destination="gpj-YE-yG5" eventType="touchUpInside" id="JOx-bP-3yd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="SB6-6E-JIO" firstAttribute="width" secondItem="qe2-Nt-r1r" secondAttribute="width" multiplier="0.3" id="Hn7-qz-VSg"/>
+                            <constraint firstItem="SB6-6E-JIO" firstAttribute="centerX" secondItem="qe2-Nt-r1r" secondAttribute="centerX" id="TqP-YQ-Adr"/>
+                            <constraint firstItem="VnM-jM-HVI" firstAttribute="top" secondItem="SB6-6E-JIO" secondAttribute="bottom" id="dem-kI-36t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXQ-hO-aJb"/>
+                    <connections>
+                        <outlet property="ButtonNext" destination="SB6-6E-JIO" id="Cab-zG-4dj"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showSecond" id="hUj-ec-fkR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h93-jU-SUk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="1148"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hyC-rA-zdG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zve-1u-mgj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yhq-c6-GvF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gpj-YE-yG5" kind="relationship" relationship="rootViewController" id="caA-4F-Nwc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1HN-9i-6Hx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="736" y="1154"/>
+        </scene>
+    </scenes>
+</document>
