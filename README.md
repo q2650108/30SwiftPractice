@@ -88,7 +88,7 @@ what did i learn from this practice ?
  * Visual Effect View Blur and Vibrancy
 ```
 
-### Project 06 - [FindMyLocation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2006%20-%20Get%20user's%20current%20location)
+### Project 06 - [Get user's current location](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2006%20-%20Get%20user's%20current%20location)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2006%20-%20Get%20user's%20current%20location/6_1.gif?raw=true)
 <br />
@@ -135,7 +135,7 @@ what did i learn from this practice ?
 
 ```
 
-### Project 09 - [RandomGradientColorMusic](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2009%20-%20ImageScroller)
+### Project 09 - [ImageScroller](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2009%20-%20ImageScroller)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2009%20-%20ImageScroller/9_1.gif?raw=true)
 <br />
