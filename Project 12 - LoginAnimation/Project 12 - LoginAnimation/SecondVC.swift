@@ -35,9 +35,9 @@ class SecondVC: UIViewController {
     @IBAction func buttonNextTouchUpInside(sender: AnyObject) {
         buttonNext.setTitle("Loading ...", forState: .Normal)
         
+        /// Excute the loading Animation
         loadingView = LoadingView()
         loadingView?.show()
-        
         
         /// Simulate the api response , when 8 sec later
         NSTimer.scheduledTimerWithTimeInterval( 8 ,
@@ -54,7 +54,6 @@ class SecondVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         initValue()
         //print("viewDidLoad")
     }
@@ -81,14 +80,16 @@ class SecondVC: UIViewController {
     }
     
     //==============================//
-    // MARK:     Hadle - Timer selector 
+    // MARK:     Hadle - Timer selector
     //=============================//
     
     /// Simulate the api response
     func handleTimer(){
         buttonNext.setTitle("Go Third VC", forState: .Normal)
+        /// Remove the loading Animation
         loadingView?.remove()
         loadingView = nil
+        /// Go next VC
         self.performSegueWithIdentifier("showThird", sender: nil)
     }
     
@@ -98,11 +99,12 @@ class SecondVC: UIViewController {
     //=============================//
     
     private func initValue(){
+        /// Set the Round Layer
         buttonNext.layer.cornerRadius = 0.5 * buttonNext.bounds.size.width
         buttonNext.clipsToBounds = true
         
     }
-
+    
     //==============================//
     // MARK:      Public Func
     //=============================//

@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--SecondVC-->
@@ -99,19 +100,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-6E-JIO" userLabel="ButtonNext">
-                                <rect key="frame" x="250" y="285" width="100" height="30"/>
-                                <state key="normal" title="Go Second VC"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SB6-6E-JIO" userLabel="ButtonNext">
+                                <rect key="frame" x="210" y="420" width="180" height="180"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SB6-6E-JIO" secondAttribute="height" multiplier="1:1" id="Vjn-k2-FTK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Go Second VC">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ButtonNextTouchUpInside:" destination="gpj-YE-yG5" eventType="touchUpInside" id="JOx-bP-3yd"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="SB6-6E-JIO" firstAttribute="centerY" secondItem="qe2-Nt-r1r" secondAttribute="centerY" id="4ci-u3-aHC"/>
+                            <constraint firstItem="SB6-6E-JIO" firstAttribute="width" secondItem="qe2-Nt-r1r" secondAttribute="width" multiplier="0.3" id="Hn7-qz-VSg"/>
                             <constraint firstItem="SB6-6E-JIO" firstAttribute="centerX" secondItem="qe2-Nt-r1r" secondAttribute="centerX" id="TqP-YQ-Adr"/>
+                            <constraint firstItem="VnM-jM-HVI" firstAttribute="top" secondItem="SB6-6E-JIO" secondAttribute="bottom" id="dem-kI-36t"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vXQ-hO-aJb"/>

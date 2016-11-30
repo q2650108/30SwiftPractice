@@ -71,13 +71,18 @@ class  LoadingView  : NSObject   {
         //        transformAnim.fromValue = NSValue.init(CATransform3D: CATransform3DMakeScale(1, 1, 1))
         //        transformAnim.toValue = NSValue.init(CATransform3D: CATransform3DMakeScale(0.7, 0.7, 0.1))
         
+        //  kCAFillModeForwards     :是在动画开始之后layer迅速进入指定位置开始执行动画并在removedOnCompletion = NO的前提下会停在动画结束的最后位置
+        //  kCAFillModeBackwards    :则是在动画开始之前迅速进入指定状态并在动画开始后执行动画，动画结束后迅速返回到layer的本身位置
+        //  kCAFillModeBoth         :如果removedOnCompletion = NO那layer会在动画开始之前就会迅速进入动画的初始位置并在执行完动画后停在动画结束的位置，如果removedOnCompletion = YES那layer会在动画开始之前就会迅速进入动画的初始位置并在执行完动画后迅速返回到layer的本身位置
+        animationGroup.fillMode = kCAFillModeBackwards
         animationGroup.animations = [ positionformAnim , scaleAnimation ]
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.backgroundColor = UIColor.whiteColor().CGColor
         shapeLayer.bounds = CGRectMake( 0 , 0 , 20 , 20 )
-        shapeLayer.position = CGPointMake( -side  , -side )
+        //shapeLayer.position = CGPointMake( -side  , -side )
         shapeLayer.cornerRadius = 10
+        
         shapeLayer.addAnimation(animationGroup, forKey: nil)
         
         replicatorLayer = CAReplicatorLayer()
