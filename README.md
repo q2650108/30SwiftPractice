@@ -176,3 +176,16 @@ what did i learn from this practice ?
  * layoutSubviews
 
 ```
+### Project 12 - [LoginAnimation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2012%20-%20LoginAnimation)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2012%20-%20LoginAnimation/12_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * CAReplicatorLayer
+ * CAShapeLayer
+ * CAAnimation
+
+```
