@@ -189,3 +189,15 @@ what did i learn from this practice ?
  * CAAnimation
 
 ```
+### Project 13 - [AnimateTableViewCell](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2013%20-%20AnimateTableViewCell)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2013%20-%20AnimateTableViewCell/13_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * CGAffineTransform
+ * UIView.transition
+
+```
