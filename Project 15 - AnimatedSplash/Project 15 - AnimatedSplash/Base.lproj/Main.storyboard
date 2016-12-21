@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_15___AnimatedSplash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milky_way_mountain_by_yakub_nihat-wallpaper-1920x1080" translatesAutoresizingMaskIntoConstraints="NO" id="SvJ-85-R4l">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Star" translatesAutoresizingMaskIntoConstraints="NO" id="tMI-dQ-GMp" userLabel="imageViewStar">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tMI-dQ-GMp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3g0-yt-AUd"/>
+                            <constraint firstItem="tMI-dQ-GMp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Kn7-zR-LnC"/>
+                            <constraint firstItem="SvJ-85-R4l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LPd-JT-cor"/>
+                            <constraint firstItem="tMI-dQ-GMp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="SXq-Qt-0YM"/>
+                            <constraint firstItem="SvJ-85-R4l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SzS-Uz-xtI"/>
+                            <constraint firstItem="SvJ-85-R4l" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gsP-bz-7bL"/>
+                            <constraint firstItem="SvJ-85-R4l" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="q7K-l0-t39"/>
+                            <constraint firstItem="tMI-dQ-GMp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ugB-fe-prT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewStar" destination="tMI-dQ-GMp" id="OEw-Dd-Z5W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Star" width="1080" height="1920"/>
+        <image name="milky_way_mountain_by_yakub_nihat-wallpaper-1920x1080" width="1920" height="1080"/>
+    </resources>
+</document>
