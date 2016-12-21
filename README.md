@@ -201,6 +201,17 @@ what did i learn from this practice ?
  * UIView.transition
 
 ```
+### Project 14 - [EmojiSlotMachine](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2014%20-%20EmojiSlotMachine)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2014%20-%20EmojiSlotMachine/14_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * UIPickerView
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
