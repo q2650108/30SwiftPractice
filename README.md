@@ -212,6 +212,18 @@ what did i learn from this practice ?
  * UIPickerView
 
 ```
+### Project 15 - [AnimatedSplash](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2015%20-%20AnimatedSplash)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2015%20-%20AnimatedSplash/15_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * CAKeyframeAnimation
+ * Layer.mask
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
