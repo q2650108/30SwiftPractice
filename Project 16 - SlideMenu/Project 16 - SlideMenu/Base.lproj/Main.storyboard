@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_16___SlideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="trX-I2-Eha" userLabel="viewRotation">
+                                <rect key="frame" x="121" y="120" width="133" height="133"/>
+                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="DhL-ad-Egq"/>
+                                    <constraint firstAttribute="width" secondItem="trX-I2-Eha" secondAttribute="height" multiplier="1:1" id="zZb-z4-8v6"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WP9-Hm-Q1B" userLabel="viewRotation2">
+                                <rect key="frame" x="121" y="253" width="133" height="133"/>
+                                <color key="backgroundColor" red="1" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WP9-Hm-Q1B" secondAttribute="height" multiplier="1:1" id="3Zt-Gq-iQG"/>
+                                    <constraint firstAttribute="height" constant="133" id="cGX-p7-UZz"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHB-lc-aw6" userLabel="button">
+                                <rect key="frame" x="164.5" y="600" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuQ-7j-WST"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="OHB-lc-aw6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ASN-t9-i4k"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OHB-lc-aw6" secondAttribute="bottom" constant="37" id="M12-j0-rwt"/>
+                            <constraint firstItem="trX-I2-Eha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uzv-YS-MXa"/>
+                            <constraint firstItem="WP9-Hm-Q1B" firstAttribute="top" secondItem="trX-I2-Eha" secondAttribute="bottom" id="e8S-SE-PRh"/>
+                            <constraint firstItem="trX-I2-Eha" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="ixn-MU-IDp"/>
+                            <constraint firstItem="WP9-Hm-Q1B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jVT-Vh-BmD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="OHB-lc-aw6" id="4s5-3K-Qvh"/>
+                        <outlet property="viewRotation" destination="trX-I2-Eha" id="eQd-SB-pG7"/>
+                        <outlet property="viewRotation2" destination="WP9-Hm-Q1B" id="CMz-I0-55E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
