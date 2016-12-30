@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , CAAnimationDelegate {
     
     @IBOutlet weak var viewRotation: UIView!
     
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         // 添加3D动画
         let transform3DAnimation = CABasicAnimation(keyPath: "transform")
         transform3DAnimation.beginTime = 0.0
-        transform3DAnimation.duration = 10.0
+        transform3DAnimation.duration = 0.5
         transform3DAnimation.fromValue = NSValue(caTransform3D:fromValue)
         transform3DAnimation.toValue = NSValue(caTransform3D:toValue)
         
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         
         let positionAnimation = CABasicAnimation(keyPath: "position.y")
         positionAnimation.beginTime = 0.0
-        positionAnimation.duration = 10.0
+        positionAnimation.duration = 0.5
         positionAnimation.fromValue = fromPosition
         positionAnimation.toValue = toPosition
         
@@ -70,8 +70,9 @@ class ViewController: UIViewController {
         
         let animationGroup: CAAnimationGroup = CAAnimationGroup()
         animationGroup.animations = [ transform3DAnimation , positionAnimation ]
-        animationGroup.duration = 10.0
+        animationGroup.duration = 0.5
         animationGroup.repeatCount = 0
+        animationGroup.delegate = self
         animationGroup.isRemovedOnCompletion = false
         animationGroup.fillMode = kCAFillModeForwards
         viewRotation2.layer.add(animationGroup, forKey: nil)
@@ -127,8 +128,13 @@ class ViewController: UIViewController {
     
     
     
+    func animationDidStart(_ anim: CAAnimation) {
+        self.viewRotation2.subviews[0].isHidden = true
+    }
     
-    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+       // self.viewRotation2.isHidden = true
+    }
 }
 
 /// ====  removedOnCompletion属性 ====
