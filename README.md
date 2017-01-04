@@ -224,6 +224,19 @@ what did i learn from this practice ?
  * Layer.mask
 
 ```
+### Project 16 - [SlideMenu](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2016%20-%20SlideMenu)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2016%20-%20SlideMenu/16_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * Custom transitioningDelegate
+ * UIViewControllerAnimatedTransitioning
+ * UIViewControllerTransitioningDelegate
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
