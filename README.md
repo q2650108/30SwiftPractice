@@ -251,7 +251,6 @@ what did i learn from this practice ?
 
 ```
 ### Project 19 - [CustomPullToRefresh](#Project07)
-<br />
 
 ```
 The Project 19 is the same as the Project 07.
