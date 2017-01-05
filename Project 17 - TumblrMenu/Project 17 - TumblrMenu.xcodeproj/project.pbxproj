@@ -13,6 +13,7 @@
 		242CAA6C1E1CF2F400C29FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242CAA6B1E1CF2F400C29FF6 /* Assets.xcassets */; };
 		242CAA6F1E1CF2F400C29FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242CAA6D1E1CF2F400C29FF6 /* LaunchScreen.storyboard */; };
 		242CAA771E1CFC3400C29FF6 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242CAA761E1CFC3400C29FF6 /* MenuVC.swift */; };
+		242CAA7B1E1DD10D00C29FF6 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242CAA7A1E1DD10D00C29FF6 /* MenuTransitionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		242CAA6E1E1CF2F400C29FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		242CAA701E1CF2F400C29FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		242CAA761E1CFC3400C29FF6 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		242CAA7A1E1DD10D00C29FF6 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		242CAA631E1CF2F300C29FF6 /* Project 17 - TumblrMenu */ = {
 			isa = PBXGroup;
 			children = (
+				242CAA791E1DD0FC00C29FF6 /* Utl */,
 				242CAA781E1CFC7500C29FF6 /* VC */,
 				242CAA641E1CF2F400C29FF6 /* AppDelegate.swift */,
 				242CAA681E1CF2F400C29FF6 /* Main.storyboard */,
@@ -73,6 +76,14 @@
 				242CAA761E1CFC3400C29FF6 /* MenuVC.swift */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		242CAA791E1DD0FC00C29FF6 /* Utl */ = {
+			isa = PBXGroup;
+			children = (
+				242CAA7A1E1DD10D00C29FF6 /* MenuTransitionManager.swift */,
+			);
+			name = Utl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				242CAA671E1CF2F400C29FF6 /* ViewController.swift in Sources */,
+				242CAA7B1E1DD10D00C29FF6 /* MenuTransitionManager.swift in Sources */,
 				242CAA651E1CF2F400C29FF6 /* AppDelegate.swift in Sources */,
 				242CAA771E1CFC3400C29FF6 /* MenuVC.swift in Sources */,
 			);

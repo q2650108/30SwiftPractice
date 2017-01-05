@@ -85,7 +85,7 @@
                                             </constraints>
                                         </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-aa-lZG" userLabel="imageViewPlaceholder">
-                                            <rect key="frame" x="225" y="234" width="94" height="94"/>
+                                            <rect key="frame" x="225" y="233.5" width="94" height="94"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="bYj-aa-lZG" secondAttribute="height" multiplier="1:1" id="zOw-Yb-uyr"/>
                                             </constraints>
@@ -109,7 +109,7 @@
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
-                                                <segue destination="x8g-4l-ae4" kind="unwind" unwindAction="unwindToMainViewControllerWithSender:" id="BZe-2T-qDc"/>
+                                                <segue destination="x8g-4l-ae4" kind="unwind" unwindAction="unwindToMainViewControllerWithSender:" id="aqA-kG-LPq"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -125,12 +125,10 @@
                                         <constraint firstItem="xXi-Sn-Q8b" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.15" id="QKz-ec-HCj"/>
                                         <constraint firstItem="BXc-Ux-yVZ" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.1" id="TIk-UM-MUi"/>
                                         <constraint firstItem="1q1-CO-DRW" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.6" id="Z7y-hZ-hzY"/>
-                                        <constraint firstItem="bYj-aa-lZG" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.6" id="ZrP-cH-SVb"/>
                                         <constraint firstItem="sYQ-aR-3Kc" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="c2A-s7-YJK"/>
                                         <constraint firstAttribute="bottom" secondItem="ycF-WF-zQB" secondAttribute="bottom" constant="10" id="cZE-9Y-Nzb"/>
                                         <constraint firstItem="xXi-Sn-Q8b" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.35" id="eMV-Lf-oCf"/>
                                         <constraint firstItem="sjz-FU-KwB" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.1" id="h83-zo-epD"/>
-                                        <constraint firstItem="bYj-aa-lZG" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.35" symbolic="YES" id="hCc-HH-PfA"/>
                                         <constraint firstItem="ycF-WF-zQB" firstAttribute="centerX" secondItem="rAd-Aj-Bd6" secondAttribute="centerX" id="i8w-58-TVF"/>
                                         <constraint firstItem="sYQ-aR-3Kc" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.15" id="n4U-yI-4Jh"/>
                                         <constraint firstItem="sYQ-aR-3Kc" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.6" id="o9y-ic-VZC"/>
@@ -143,10 +141,12 @@
                             </visualEffectView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="fl7-eg-ncU" firstAttribute="centerX" secondItem="XFA-Ei-ofH" secondAttribute="centerX" id="3Jw-18-TVa"/>
-                            <constraint firstItem="fl7-eg-ncU" firstAttribute="centerY" secondItem="XFA-Ei-ofH" secondAttribute="centerY" id="3on-eE-mbQ"/>
-                            <constraint firstItem="fl7-eg-ncU" firstAttribute="width" secondItem="XFA-Ei-ofH" secondAttribute="width" id="STC-rI-ZJl"/>
-                            <constraint firstItem="fl7-eg-ncU" firstAttribute="height" secondItem="XFA-Ei-ofH" secondAttribute="height" id="YLZ-5f-S7w"/>
+                            <constraint firstItem="fl7-eg-ncU" firstAttribute="leading" secondItem="XFA-Ei-ofH" secondAttribute="leading" id="5jQ-cz-AjI"/>
+                            <constraint firstItem="FOb-j9-2Ja" firstAttribute="top" secondItem="fl7-eg-ncU" secondAttribute="bottom" id="J1E-Kz-Cbm"/>
+                            <constraint firstAttribute="trailing" secondItem="fl7-eg-ncU" secondAttribute="trailing" id="JcX-u6-lAG"/>
+                            <constraint firstItem="bYj-aa-lZG" firstAttribute="leading" secondItem="XFA-Ei-ofH" secondAttribute="trailing" multiplier="0.6" id="WTp-Xa-TXP"/>
+                            <constraint firstItem="fl7-eg-ncU" firstAttribute="top" secondItem="XFA-Ei-ofH" secondAttribute="top" id="WWZ-xM-EYV"/>
+                            <constraint firstItem="bYj-aa-lZG" firstAttribute="top" secondItem="FOb-j9-2Ja" secondAttribute="top" multiplier="0.35" id="qmD-Ff-8f6"/>
                         </constraints>
                     </view>
                     <connections>
