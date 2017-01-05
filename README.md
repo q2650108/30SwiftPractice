@@ -105,9 +105,9 @@ what did i learn from this practice ?
  * Add the .Gpx to simulate Location
  * Add the Localization ( Support the English and Chinese )
 ```
-
-### Project 07 - [PullToRefresh](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2007%20-%20PullToRefresh)
 ### <a name="Project07"></a>
+### Project 07 - [PullToRefresh](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2007%20-%20PullToRefresh)
+
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2007%20-%20PullToRefresh/7_1.gif?raw=true)
 <br />
 
@@ -250,7 +250,7 @@ what did i learn from this practice ?
  * UIViewControllerTransitioningDelegate
 
 ```
-### Project 19 - [CustomPullToRefresh](#Project07))
+### Project 19 - [CustomPullToRefresh](#Project07)
 <br />
 
 ```
