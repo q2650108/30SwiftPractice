@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zq0-XQ-wIl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_17___TumblrMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR9-g7-6jV" userLabel="buttonBackground">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <state key="normal" title="Button" image="background"/>
+                                <connections>
+                                    <segue destination="QMG-er-P3e" kind="presentation" id="yRw-yw-BVR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LR9-g7-6jV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CQl-jj-gIS"/>
+                            <constraint firstAttribute="trailing" secondItem="LR9-g7-6jV" secondAttribute="trailing" id="DZ1-hd-wT3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="LR9-g7-6jV" secondAttribute="bottom" id="de5-aL-vAp"/>
+                            <constraint firstItem="LR9-g7-6jV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mSV-2l-v0a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sqX-QT-QpJ"/>
+                    <connections>
+                        <outlet property="buttonBackground" destination="LR9-g7-6jV" id="2RN-xL-NyG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="122.78860569715144"/>
+        </scene>
+        <!--MenuVC-->
+        <scene sceneID="JD9-Vn-KZf">
+            <objects>
+                <viewController id="QMG-er-P3e" customClass="MenuVC" customModule="Project_17___TumblrMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LQh-W4-gCx"/>
+                        <viewControllerLayoutGuide type="bottom" id="FOb-j9-2Ja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XFA-Ei-ofH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fl7-eg-ncU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rAd-Aj-Bd6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idea" translatesAutoresizingMaskIntoConstraints="NO" id="sjz-FU-KwB" userLabel="imageViewIdea">
+                                            <rect key="frame" x="56.5" y="66.5" width="94" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="sjz-FU-KwB" secondAttribute="height" multiplier="1:1" id="48m-uh-J8K"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like" translatesAutoresizingMaskIntoConstraints="NO" id="BXc-Ux-yVZ" userLabel="imageViewLike">
+                                            <rect key="frame" x="225" y="66.5" width="94" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="BXc-Ux-yVZ" secondAttribute="height" multiplier="1:1" id="3GW-He-rgS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music-player" translatesAutoresizingMaskIntoConstraints="NO" id="xXi-Sn-Q8b" userLabel="imageViewPlayer">
+                                            <rect key="frame" x="56.5" y="234" width="93.5" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="xXi-Sn-Q8b" secondAttribute="height" multiplier="1:1" id="ZBd-vF-tg2"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="bYj-aa-lZG" userLabel="imageViewPlaceholder">
+                                            <rect key="frame" x="225" y="233.5" width="94" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="bYj-aa-lZG" secondAttribute="height" multiplier="1:1" id="zOw-Yb-uyr"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="sYQ-aR-3Kc" userLabel="imageViewStar">
+                                            <rect key="frame" x="56.5" y="400" width="94" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="sYQ-aR-3Kc" secondAttribute="height" multiplier="1:1" id="3zE-5A-a4k"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="1q1-CO-DRW" userLabel="imageViewUser">
+                                            <rect key="frame" x="225" y="400" width="93.5" height="94"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="1q1-CO-DRW" secondAttribute="height" multiplier="1:1" id="lYQ-gp-pO0"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycF-WF-zQB" userLabel="buttonUnwind">
+                                            <rect key="frame" x="0.0" y="590.5" width="375" height="66.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <state key="normal" title="Back To Main">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <segue destination="x8g-4l-ae4" kind="unwind" unwindAction="unwindToMainViewControllerWithSender:" id="aqA-kG-LPq"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BXc-Ux-yVZ" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="5bf-RN-VTE"/>
+                                        <constraint firstItem="ycF-WF-zQB" firstAttribute="height" secondItem="rAd-Aj-Bd6" secondAttribute="height" multiplier="0.1" id="8Wd-wp-new"/>
+                                        <constraint firstItem="1q1-CO-DRW" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.6" id="9Rk-zD-a2f"/>
+                                        <constraint firstItem="1q1-CO-DRW" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="9zM-qh-fuQ"/>
+                                        <constraint firstItem="xXi-Sn-Q8b" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="BpC-7f-SUK"/>
+                                        <constraint firstItem="BXc-Ux-yVZ" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.6" id="Ir6-Wr-cae"/>
+                                        <constraint firstItem="sjz-FU-KwB" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="NGo-cw-DLI"/>
+                                        <constraint firstItem="bYj-aa-lZG" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="PDN-RU-NgE"/>
+                                        <constraint firstItem="xXi-Sn-Q8b" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.15" id="QKz-ec-HCj"/>
+                                        <constraint firstItem="BXc-Ux-yVZ" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.1" id="TIk-UM-MUi"/>
+                                        <constraint firstItem="1q1-CO-DRW" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.6" id="Z7y-hZ-hzY"/>
+                                        <constraint firstItem="sYQ-aR-3Kc" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" multiplier="0.25" id="c2A-s7-YJK"/>
+                                        <constraint firstAttribute="bottom" secondItem="ycF-WF-zQB" secondAttribute="bottom" constant="10" id="cZE-9Y-Nzb"/>
+                                        <constraint firstItem="xXi-Sn-Q8b" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.35" id="eMV-Lf-oCf"/>
+                                        <constraint firstItem="sjz-FU-KwB" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.1" id="h83-zo-epD"/>
+                                        <constraint firstItem="ycF-WF-zQB" firstAttribute="centerX" secondItem="rAd-Aj-Bd6" secondAttribute="centerX" id="i8w-58-TVF"/>
+                                        <constraint firstItem="sYQ-aR-3Kc" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.15" id="n4U-yI-4Jh"/>
+                                        <constraint firstItem="sYQ-aR-3Kc" firstAttribute="top" secondItem="rAd-Aj-Bd6" secondAttribute="bottom" multiplier="0.6" id="o9y-ic-VZC"/>
+                                        <constraint firstItem="sjz-FU-KwB" firstAttribute="leading" secondItem="rAd-Aj-Bd6" secondAttribute="trailing" multiplier="0.15" id="q69-ke-0el"/>
+                                        <constraint firstItem="ycF-WF-zQB" firstAttribute="width" secondItem="rAd-Aj-Bd6" secondAttribute="width" id="tf3-hq-naS"/>
+                                    </constraints>
+                                </view>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="fl7-eg-ncU" firstAttribute="leading" secondItem="XFA-Ei-ofH" secondAttribute="leading" id="5jQ-cz-AjI"/>
+                            <constraint firstItem="FOb-j9-2Ja" firstAttribute="top" secondItem="fl7-eg-ncU" secondAttribute="bottom" id="J1E-Kz-Cbm"/>
+                            <constraint firstAttribute="trailing" secondItem="fl7-eg-ncU" secondAttribute="trailing" id="JcX-u6-lAG"/>
+                            <constraint firstItem="bYj-aa-lZG" firstAttribute="leading" secondItem="XFA-Ei-ofH" secondAttribute="trailing" multiplier="0.6" id="WTp-Xa-TXP"/>
+                            <constraint firstItem="fl7-eg-ncU" firstAttribute="top" secondItem="XFA-Ei-ofH" secondAttribute="top" id="WWZ-xM-EYV"/>
+                            <constraint firstItem="bYj-aa-lZG" firstAttribute="top" secondItem="FOb-j9-2Ja" secondAttribute="top" multiplier="0.35" id="qmD-Ff-8f6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewIdea" destination="sjz-FU-KwB" id="lrP-rY-G0s"/>
+                        <outlet property="imageViewLike" destination="BXc-Ux-yVZ" id="AuQ-Dn-oJ1"/>
+                        <outlet property="imageViewPlaceholder" destination="bYj-aa-lZG" id="oyk-fi-zcf"/>
+                        <outlet property="imageViewPlayer" destination="xXi-Sn-Q8b" id="aZJ-64-Lt8"/>
+                        <outlet property="imageViewStar" destination="sYQ-aR-3Kc" id="iTF-NN-2A2"/>
+                        <outlet property="imageViewUser" destination="1q1-CO-DRW" id="LIe-zj-l8V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMm-9R-tXc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="x8g-4l-ae4" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1813.5999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BGF-iV-dYR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zq0-XQ-wIl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="awe-Ax-Wsj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="riO-ol-5To"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9b-iU-Y5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="266" y="123"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1280" height="853"/>
+        <image name="idea" width="512" height="512"/>
+        <image name="like" width="512" height="512"/>
+        <image name="music-player" width="512" height="512"/>
+        <image name="placeholder" width="512" height="512"/>
+        <image name="star" width="512" height="512"/>
+        <image name="user" width="512" height="512"/>
+    </resources>
+</document>
