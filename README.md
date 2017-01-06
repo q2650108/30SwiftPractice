@@ -250,6 +250,18 @@ what did i learn from this practice ?
  * UIViewControllerTransitioningDelegate
 
 ```
+### Project 18 - [LimitCharacters](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2018%20-%20LimitCharacters)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2018%20-%20LimitCharacters/18_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * NotificationCenter
+ * UITextFieldDelegate - shouldChangeCharactersIn
+
+```
 ### Project 19 - [CustomPullToRefresh](#Project07)
 
 ```
