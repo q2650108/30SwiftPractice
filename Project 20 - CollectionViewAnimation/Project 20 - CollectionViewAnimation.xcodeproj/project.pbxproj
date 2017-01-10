@@ -13,6 +13,7 @@
 		2428DD3D1E24902E000312C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2428DD3C1E24902E000312C8 /* Assets.xcassets */; };
 		2428DD401E24902E000312C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2428DD3E1E24902E000312C8 /* LaunchScreen.storyboard */; };
 		2428DD481E24944A000312C8 /* ContetnCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428DD471E24944A000312C8 /* ContetnCVC.swift */; };
+		2428DD4E1E24C0ED000312C8 /* ContentCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2428DD4D1E24C0ED000312C8 /* ContentCVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2428DD3F1E24902E000312C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2428DD411E24902E000312C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2428DD471E24944A000312C8 /* ContetnCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContetnCVC.swift; sourceTree = "<group>"; };
+		2428DD4D1E24C0ED000312C8 /* ContentCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		2428DD341E24902E000312C8 /* Project 20 - CollectionViewAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				2428DD4A1E24BE53000312C8 /* Enum */,
 				2428DD491E24944F000312C8 /* VC */,
 				2428DD351E24902E000312C8 /* AppDelegate.swift */,
 				2428DD371E24902E000312C8 /* ViewController.swift */,
@@ -71,8 +74,16 @@
 			isa = PBXGroup;
 			children = (
 				2428DD471E24944A000312C8 /* ContetnCVC.swift */,
+				2428DD4D1E24C0ED000312C8 /* ContentCVCell.swift */,
 			);
 			name = VC;
+			sourceTree = "<group>";
+		};
+		2428DD4A1E24BE53000312C8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				2428DD481E24944A000312C8 /* ContetnCVC.swift in Sources */,
 				2428DD381E24902E000312C8 /* ViewController.swift in Sources */,
+				2428DD4E1E24C0ED000312C8 /* ContentCVCell.swift in Sources */,
 				2428DD361E24902E000312C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +324,7 @@
 				2428DD461E24902E000312C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
