@@ -9,13 +9,12 @@
 import UIKit
 
 class ContentCVCell: UICollectionViewCell {
-   
+    
     
     //==============================//
     // MARK:     Pirvate Property
     //=============================//
-    
-    
+
     //==============================//
     // MARK:     Public Property
     //=============================//
@@ -29,7 +28,7 @@ class ContentCVCell: UICollectionViewCell {
     @IBOutlet weak var imageViewContent: UIImageView!
     
     @IBOutlet weak var labelTitle: UILabel!
-    
+
     
     //==============================//
     // MARK:     Action
@@ -67,6 +66,6 @@ class ContentCVCell: UICollectionViewCell {
     // MARK:      Public Func
     //=============================//
     
-  
+    
     
 }

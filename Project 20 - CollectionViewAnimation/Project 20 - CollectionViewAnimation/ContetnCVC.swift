@@ -87,6 +87,22 @@ class ContetnCVC: UICollectionViewController  {
         self.collectionView?.setCollectionViewLayout(flowLayout, animated: true)
     }
     
+    
+    func handleButtonBackCallback(){
+        guard let _collectionView = collectionView else {
+            return
+        }
+        _collectionView.allowsSelection = true
+        _collectionView.isScrollEnabled = true
+        
+        self.navigationController?.navigationBar.layer.zPosition = 0
+        
+        DispatchQueue.main.async {
+            _collectionView.reloadData()
+        }
+        
+    }
+    
     //==============================//
     // MARK:     Life Cycle
     //=============================//
@@ -124,23 +140,19 @@ class ContetnCVC: UICollectionViewController  {
         
         //                       let flow = collectionView?.collectionViewLayout as! UICollectionViewFlowLayout
         //                flow.scrollDirection
-        
-        
+
     }
-    
-    
-    
-    
+
     
     //==============================//
     // MARK:      Public Func
     //=============================//
     
     
-    /// <#Description#>
+    /// Caculate Cell Size
     ///
-    /// - Parameter collectionView: <#collectionView description#>
-    /// - Returns: <#return value description#>
+    /// - Parameter collectionView:
+    /// - Returns: Size
     func getMinSize( _ collectionView : UICollectionView ) -> CGSize {
         var size : CGSize = CGSize()
         if currentScrollDirection == .horizontal {
@@ -149,7 +161,7 @@ class ContetnCVC: UICollectionViewController  {
                 - UIApplication.shared.statusBarFrame.height
                 - margin * 2
                 - spacing * (perCellNumm - 1) )
-//            minSide =  minSide - (  spacing * 4 )
+            //            minSide =  minSide - (  spacing * 4 )
             minSide =   minSide  / perCellNumm
             size = CGSize(width: minSide , height: minSide  )
         }else {
@@ -179,8 +191,21 @@ class ContetnCVC: UICollectionViewController  {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ContentCVCell
         
+        /// Set layer zPosition
+        cell.layer.zPosition = 0
+        
+        /// Set Image
+        cell.imageViewContent.contentMode = .center
         cell.imageViewContent.image = UIImage(named: imageList[indexPath.row % 5])
         
+        /// Set Tap Gesture Recognizer
+        cell.imageViewContent.gestureRecognizers?.removeAll()
+        cell.imageViewContent.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleButtonBackCallback)))
+        
+        cell.imageViewContent.isUserInteractionEnabled = false
+
+        
+        /// Set Label
         cell.labelTitle.text = "Image_\(indexPath.row)"
         
         return cell
@@ -191,8 +216,34 @@ class ContetnCVC: UICollectionViewController  {
     //=============================//
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //print( collectionView.cellForItem(at: indexPath)?.frame.height)
         
-        print( collectionView.cellForItem(at: indexPath)?.frame.height)
+        guard let cell = collectionView.cellForItem(at: indexPath) as? ContentCVCell else{
+            return
+        }
+        
+        cell.imageViewContent.isUserInteractionEnabled = true
+        
+        
+        let animations: () -> () = {
+            //            [ weak collectionView ] in
+            //
+            //            guard let _collectionView = collectionView else {
+            //                return
+            //            }
+            
+            cell.imageViewContent.contentMode = .scaleAspectFit
+            cell.frame = collectionView.bounds
+            cell.layer.zPosition = 1
+            self.navigationController?.navigationBar.layer.zPosition = -1
+            
+        }
+        
+        collectionView.isScrollEnabled = false
+        collectionView.allowsSelection = false
+        
+        UIView.animate( withDuration: 0.8 , delay: 0 , usingSpringWithDamping: 0.5 , initialSpringVelocity: 0.8 , options: [], animations: animations, completion: nil)
+        
     }
     
 }

@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,6 +65,7 @@
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-6L-5wr" userLabel="imageViewContent">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </imageView>
                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dP3-cr-c2B" userLabel="visualEffectViewBackground">
                                             <rect key="frame" x="0.0" y="80" width="100" height="20"/>
@@ -89,6 +89,9 @@
                                                 </constraints>
                                             </view>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="VtS-oV-qVx"/>
+                                            </constraints>
                                             <blurEffect style="light"/>
                                         </visualEffectView>
                                     </subviews>
@@ -101,7 +104,6 @@
                                     <constraint firstItem="dP3-cr-c2B" firstAttribute="leading" secondItem="Lsg-fQ-b2C" secondAttribute="leading" id="O8A-ak-hW7"/>
                                     <constraint firstAttribute="bottom" secondItem="dP3-cr-c2B" secondAttribute="bottom" id="VC8-Yf-Jds"/>
                                     <constraint firstAttribute="bottom" secondItem="c8X-6L-5wr" secondAttribute="bottom" id="si6-n3-2Kq"/>
-                                    <constraint firstItem="dP3-cr-c2B" firstAttribute="height" secondItem="Lsg-fQ-b2C" secondAttribute="height" multiplier="0.2" id="tGX-Fq-kJ8"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="imageViewContent" destination="c8X-6L-5wr" id="90Q-h3-pmu"/>
