@@ -269,6 +269,18 @@ The Project 19 is the same as the Project 07.
 
 
 ```
+### Project 20 - [CollectionViewAnimation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2020%20-%20CollectionViewAnimation)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2020%20-%20CollectionViewAnimation/20_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * NotificationCenter
+ * UITextFieldDelegate - shouldChangeCharactersIn
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
@@ -277,7 +289,7 @@ The Project 19 is the same as the Project 07.
 ```
 what did i learn from this practice ? 
 
- * Custom View , @IBInspectable
- * Extension
+ * UICollectionViewController
+ * UICollectionViewDelegateFlowLayout
 
 ```
