@@ -303,12 +303,12 @@ Pending
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2023%20-%20SlideOutMenu/23_1.gif?raw=true)
 <br />
-[Github](https://github.com/John-Lluch/SWRevealViewController)
+[SWRevealViewController Github](https://github.com/John-Lluch/SWRevealViewController)
 ```
 what did i learn from this practice ? 
 
  * cocoapods
- * SWRevealViewController [Github](https://github.com/John-Lluch/SWRevealViewController)
+ * SWRevealViewController
 
 ```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
