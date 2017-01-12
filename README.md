@@ -296,7 +296,7 @@ what did i learn from this practice ?
 ### Project 22 - [3DTouchQuickAction] [Reference](http://stackoverflow.com/questions/32491188/simulate-force-touch-3d-touch-on-iphone-6s-or-iphone-6s-plus-simulators)
 
 ```
-pending
+Pending
 
 ```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
