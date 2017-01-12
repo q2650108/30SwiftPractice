@@ -303,7 +303,7 @@ Pending
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2023%20-%20SlideOutMenu/23_1.gif?raw=true)
 <br />
-[SWRevealViewController Github](https://github.com/John-Lluch/SWRevealViewController)
+[SWRevealViewController GitHub](https://github.com/John-Lluch/SWRevealViewController)
 ```
 what did i learn from this practice ? 
 
