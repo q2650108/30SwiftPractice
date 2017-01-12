@@ -1,0 +1,6 @@
+framework module Pods_Project_23___SlideOutMenu {
+  umbrella header "Pods-Project 23 - SlideOutMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}

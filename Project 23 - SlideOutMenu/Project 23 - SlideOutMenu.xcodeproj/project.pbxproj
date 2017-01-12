@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24F65D9A1E27112C003F798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F65D991E27112C003F798F /* AppDelegate.swift */; };
+		24F65D9F1E27112C003F798F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F65D9D1E27112C003F798F /* Main.storyboard */; };
+		24F65DA11E27112C003F798F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F65DA01E27112C003F798F /* Assets.xcassets */; };
+		24F65DA41E27112C003F798F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F65DA21E27112C003F798F /* LaunchScreen.storyboard */; };
+		24F65DAD1E2716A9003F798F /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F65DAC1E2716A9003F798F /* MenuTVC.swift */; };
+		24F65DAF1E2716E3003F798F /* MenuItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F65DAE1E2716E3003F798F /* MenuItemVC.swift */; };
+		7AFDB16B83233CA170D78934 /* Pods_Project_23___SlideOutMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C598F7CFC0EFD0DC8973E3D /* Pods_Project_23___SlideOutMenu.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2487D9A81E271EF3002B9C3C /* Project 23 - SlideOutMenu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Project 23 - SlideOutMenu-Bridging-Header.h"; sourceTree = "<group>"; };
+		24F65D961E27112C003F798F /* Project 23 - SlideOutMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 23 - SlideOutMenu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24F65D991E27112C003F798F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24F65D9E1E27112C003F798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24F65DA01E27112C003F798F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24F65DA31E27112C003F798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24F65DA51E27112C003F798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F65DAC1E2716A9003F798F /* MenuTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
+		24F65DAE1E2716E3003F798F /* MenuItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemVC.swift; sourceTree = "<group>"; };
+		99896FCBE28D52EF49E3E85B /* Pods-Project 23 - SlideOutMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 23 - SlideOutMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Project 23 - SlideOutMenu/Pods-Project 23 - SlideOutMenu.release.xcconfig"; sourceTree = "<group>"; };
+		9C598F7CFC0EFD0DC8973E3D /* Pods_Project_23___SlideOutMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Project_23___SlideOutMenu.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F42AC909A12034840DC5EC86 /* Pods-Project 23 - SlideOutMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 23 - SlideOutMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Project 23 - SlideOutMenu/Pods-Project 23 - SlideOutMenu.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24F65D931E27112C003F798F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AFDB16B83233CA170D78934 /* Pods_Project_23___SlideOutMenu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24F65D8D1E27112C003F798F = {
+			isa = PBXGroup;
+			children = (
+				24F65D981E27112C003F798F /* Project 23 - SlideOutMenu */,
+				24F65D971E27112C003F798F /* Products */,
+				2DE3CF4B5884471CA4E8090D /* Pods */,
+				A53EE4FD50EF73DA47BDDC96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24F65D971E27112C003F798F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24F65D961E27112C003F798F /* Project 23 - SlideOutMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24F65D981E27112C003F798F /* Project 23 - SlideOutMenu */ = {
+			isa = PBXGroup;
+			children = (
+				24F65DAB1E271698003F798F /* VC */,
+				24F65D991E27112C003F798F /* AppDelegate.swift */,
+				24F65D9D1E27112C003F798F /* Main.storyboard */,
+				24F65DA01E27112C003F798F /* Assets.xcassets */,
+				24F65DA21E27112C003F798F /* LaunchScreen.storyboard */,
+				24F65DA51E27112C003F798F /* Info.plist */,
+				2487D9A81E271EF3002B9C3C /* Project 23 - SlideOutMenu-Bridging-Header.h */,
+			);
+			path = "Project 23 - SlideOutMenu";
+			sourceTree = "<group>";
+		};
+		24F65DAB1E271698003F798F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				24F65DAC1E2716A9003F798F /* MenuTVC.swift */,
+				24F65DAE1E2716E3003F798F /* MenuItemVC.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		2DE3CF4B5884471CA4E8090D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F42AC909A12034840DC5EC86 /* Pods-Project 23 - SlideOutMenu.debug.xcconfig */,
+				99896FCBE28D52EF49E3E85B /* Pods-Project 23 - SlideOutMenu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A53EE4FD50EF73DA47BDDC96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C598F7CFC0EFD0DC8973E3D /* Pods_Project_23___SlideOutMenu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24F65D951E27112C003F798F /* Project 23 - SlideOutMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24F65DA81E27112C003F798F /* Build configuration list for PBXNativeTarget "Project 23 - SlideOutMenu" */;
+			buildPhases = (
+				E1B259A743651055F6B642AD /* [CP] Check Pods Manifest.lock */,
+				24F65D921E27112C003F798F /* Sources */,
+				24F65D931E27112C003F798F /* Frameworks */,
+				24F65D941E27112C003F798F /* Resources */,
+				425CD95916F230C41E17E19C /* [CP] Embed Pods Frameworks */,
+				729B3CB91BFC750AD5D58D5B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 23 - SlideOutMenu";
+			productName = "Project 23 - SlideOutMenu";
+			productReference = 24F65D961E27112C003F798F /* Project 23 - SlideOutMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24F65D8E1E27112C003F798F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = q2650108;
+				TargetAttributes = {
+					24F65D951E27112C003F798F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = KF4365QBY5;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 24F65D911E27112C003F798F /* Build configuration list for PBXProject "Project 23 - SlideOutMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24F65D8D1E27112C003F798F;
+			productRefGroup = 24F65D971E27112C003F798F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24F65D951E27112C003F798F /* Project 23 - SlideOutMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24F65D941E27112C003F798F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F65DA41E27112C003F798F /* LaunchScreen.storyboard in Resources */,
+				24F65DA11E27112C003F798F /* Assets.xcassets in Resources */,
+				24F65D9F1E27112C003F798F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		425CD95916F230C41E17E19C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project 23 - SlideOutMenu/Pods-Project 23 - SlideOutMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		729B3CB91BFC750AD5D58D5B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Project 23 - SlideOutMenu/Pods-Project 23 - SlideOutMenu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1B259A743651055F6B642AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F65D921E27112C003F798F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24F65DAF1E2716E3003F798F /* MenuItemVC.swift in Sources */,
+				24F65DAD1E2716A9003F798F /* MenuTVC.swift in Sources */,
+				24F65D9A1E27112C003F798F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24F65D9D1E27112C003F798F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F65D9E1E27112C003F798F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24F65DA21E27112C003F798F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24F65DA31E27112C003F798F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24F65DA61E27112C003F798F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24F65DA71E27112C003F798F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24F65DA91E27112C003F798F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F42AC909A12034840DC5EC86 /* Pods-Project 23 - SlideOutMenu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = KF4365QBY5;
+				INFOPLIST_FILE = "Project 23 - SlideOutMenu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.q2650108.Project-23---SlideOutMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project 23 - SlideOutMenu/Project 23 - SlideOutMenu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		24F65DAA1E27112C003F798F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99896FCBE28D52EF49E3E85B /* Pods-Project 23 - SlideOutMenu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = KF4365QBY5;
+				INFOPLIST_FILE = "Project 23 - SlideOutMenu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.q2650108.Project-23---SlideOutMenu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Project 23 - SlideOutMenu/Project 23 - SlideOutMenu-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24F65D911E27112C003F798F /* Build configuration list for PBXProject "Project 23 - SlideOutMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F65DA61E27112C003F798F /* Debug */,
+				24F65DA71E27112C003F798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24F65DA81E27112C003F798F /* Build configuration list for PBXNativeTarget "Project 23 - SlideOutMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24F65DA91E27112C003F798F /* Debug */,
+				24F65DAA1E27112C003F798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24F65D8E1E27112C003F798F /* Project object */;
+}
