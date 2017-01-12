@@ -293,6 +293,12 @@ what did i learn from this practice ?
  * UITextFieldDelegate - shouldChangeCharactersIn
 
 ```
+### Project 22 - [3DTouchQuickAction] [Reference](http://stackoverflow.com/questions/32491188/simulate-force-touch-3d-touch-on-iphone-6s-or-iphone-6s-plus-simulators)
+
+```
+pending
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
