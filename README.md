@@ -322,7 +322,7 @@ what did i learn from this practice ?
 what did i learn from this practice ? 
 
  * NotificationCenter
- * UITextFieldDelegate - shouldChangeCharactersIn
+ * FMMosaicLayout
 
 ```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
@@ -333,7 +333,7 @@ what did i learn from this practice ?
 ```
 what did i learn from this practice ? 
 
- * UITableViewRowAction
+ * cocoapods
  * UIActivityViewController
 
 ```
