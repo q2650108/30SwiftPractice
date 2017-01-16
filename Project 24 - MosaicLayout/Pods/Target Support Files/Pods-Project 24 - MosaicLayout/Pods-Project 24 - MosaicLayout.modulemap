@@ -1,0 +1,6 @@
+framework module Pods_Project_24___MosaicLayout {
+  umbrella header "Pods-Project 24 - MosaicLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}
