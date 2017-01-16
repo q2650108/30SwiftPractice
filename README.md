@@ -312,6 +312,19 @@ what did i learn from this practice ?
  * SWRevealViewController
 
 ```
+### Project 24 - [MosaicLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2024%20-%20MosaicLayout)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2024%20-%20MosaicLayout/24_1.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2024%20-%20MosaicLayout/24_2.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * NotificationCenter
+ * UITextFieldDelegate - shouldChangeCharactersIn
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
