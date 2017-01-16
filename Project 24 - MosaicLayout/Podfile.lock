@@ -1,0 +1,12 @@
+PODS:
+  - FMMosaicLayout (0.1.4)
+
+DEPENDENCIES:
+  - FMMosaicLayout
+
+SPEC CHECKSUMS:
+  FMMosaicLayout: c0febf6876c987c425d7e2176d034fa7a2c98cb5
+
+PODFILE CHECKSUM: 139803e787d5e75b55ad54c5de48ad8ef2c7a290
+
+COCOAPODS: 1.1.1
