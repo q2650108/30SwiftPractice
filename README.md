@@ -325,6 +325,20 @@ what did i learn from this practice ?
  * FMMosaicLayout
 
 ```
+### Project 24 - [UIViewBasicAnimation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2025%20-%20UIViewBasicAnimation)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2025%20-%20UIViewBasicAnimation/25_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * UIView.animate
+ * chain multiple transformation
+ * CAKeyframeAnimation
+ * UIBezierPath
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
