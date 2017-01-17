@@ -325,7 +325,7 @@ what did i learn from this practice ?
  * FMMosaicLayout
 
 ```
-### Project 24 - [UIViewBasicAnimation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2025%20-%20UIViewBasicAnimation)
+### Project 25 - [UIViewBasicAnimation](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2025%20-%20UIViewBasicAnimation)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2025%20-%20UIViewBasicAnimation/25_1.gif?raw=true)
 <br />
