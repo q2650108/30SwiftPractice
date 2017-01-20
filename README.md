@@ -339,6 +339,17 @@ what did i learn from this practice ?
  * UIBezierPath
 
 ```
+### Project 26 - [CoreDataApp](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2026%20-%20CoreDataApp)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2026%20-%20CoreDataApp/26_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * Core Data
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
