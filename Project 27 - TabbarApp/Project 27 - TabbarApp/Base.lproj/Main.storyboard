@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Asn-XD-ng5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--More-->
+        <scene sceneID="dq2-8S-Gtd">
+            <objects>
+                <viewController title="More" id="Cbx-zg-A5k" customClass="MyVC" customModule="Project_27___TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CJp-MG-qLW"/>
+                        <viewControllerLayoutGuide type="bottom" id="XmQ-wT-0l9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dbt-F1-hrc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="XqL-Ym-dU6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FQe-a8-knh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="280"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="RS9-Jy-JTL">
+            <objects>
+                <viewController title="History" id="hdI-al-eTF" customClass="MyVC" customModule="Project_27___TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IW9-GP-v3M"/>
+                        <viewControllerLayoutGuide type="bottom" id="fhO-iU-dCU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HRU-9O-Ffa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="NXY-xm-kyS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twI-MQ-JTw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895" y="709"/>
+        </scene>
+        <!--Top Rated-->
+        <scene sceneID="dZc-2c-e7q">
+            <objects>
+                <viewController title="Top Rated" id="NAp-X3-kcv" customClass="MyVC" customModule="Project_27___TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DOe-PG-djR"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hs6-Gi-TtM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i4E-Fb-w06">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="topRated" id="tu1-QP-dIX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XTt-IG-GmJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="-375"/>
+        </scene>
+        <!--MyTBC-->
+        <scene sceneID="ioN-5x-uWW">
+            <objects>
+                <tabBarController id="Asn-XD-ng5" customClass="MyTBC" customModule="Project_27___TabbarApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Mp2-KB-ihu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NAp-X3-kcv" kind="relationship" relationship="viewControllers" id="oEp-wX-f88"/>
+                        <segue destination="Cbx-zg-A5k" kind="relationship" relationship="viewControllers" id="YDh-bR-dzM"/>
+                        <segue destination="hdI-al-eTF" kind="relationship" relationship="viewControllers" id="CPr-n5-907"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1e9-4l-Hvf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-895" y="-47"/>
+        </scene>
+    </scenes>
+</document>
