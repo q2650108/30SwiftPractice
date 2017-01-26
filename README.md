@@ -363,7 +363,7 @@ what did i learn from this practice ?
 ```
 ### Project 28 - [SpotlightSearch](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2028%20-%20SpotlightSearch)
 
-![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2028%20-%20SpotlightSearch/28_1.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2028%20-%20SpotlightSearch/28_2.gif?raw=true)
 <br />
 
 ```
