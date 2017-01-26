@@ -361,6 +361,17 @@ what did i learn from this practice ?
  * Tab Bar Controller
 
 ```
+### Project 28 - [SpotlightSearch](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2028%20-%20SpotlightSearch)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2028%20-%20SpotlightSearch/28_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * CoreSpotlight
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
