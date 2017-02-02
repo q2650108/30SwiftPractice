@@ -371,6 +371,18 @@ what did i learn from this practice ?
  * CoreSpotlight
 
 ```
+### Project 29 - [iMessageImagePicker](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2029%20-%20iMessageImagePicker)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2029%20-%20iMessageImagePicker/29_1.gif?raw=true)
+<br />
+<br />
+[▶︎ImagePickerTrayController GitHub◀︎](https://github.com/lbrndnr/ImagePickerTrayController)
+```
+what did i learn from this practice ? 
+
+ * ImagePickerTrayController (2017/02/02 Still WIP)
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
