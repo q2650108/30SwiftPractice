@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fhX-a3-zu8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="1Qo-vU-9eP">
+            <objects>
+                <viewController id="Af3-Zv-yFs" customClass="ViewController" customModule="Project_29___iMessageImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tdy-Zf-PTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="52D-bG-fvT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yMQ-Rr-mkf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moon" translatesAutoresizingMaskIntoConstraints="NO" id="SO4-co-QR6" userLabel="imageViewBackground">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="M0Q-PG-JfO" userLabel="imageViewProfile">
+                                <rect key="frame" x="138" y="114" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M0Q-PG-JfO" secondAttribute="height" multiplier="1:1" id="MDP-94-DER"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="cDP-On-Rnx" appends="YES" id="UaR-yd-eZj"/>
+                                </connections>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your User Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g7o-5P-PbB" userLabel="textFieldName">
+                                <rect key="frame" x="75" y="244" width="225" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g7o-5P-PbB" firstAttribute="top" secondItem="M0Q-PG-JfO" secondAttribute="bottom" constant="30" id="3D7-9l-VLq"/>
+                            <constraint firstAttribute="trailing" secondItem="SO4-co-QR6" secondAttribute="trailing" id="Khf-0n-vKA"/>
+                            <constraint firstItem="SO4-co-QR6" firstAttribute="leading" secondItem="yMQ-Rr-mkf" secondAttribute="leading" id="OEy-Ko-ey5"/>
+                            <constraint firstItem="g7o-5P-PbB" firstAttribute="centerX" secondItem="yMQ-Rr-mkf" secondAttribute="centerX" id="RRw-7D-sbP"/>
+                            <constraint firstItem="M0Q-PG-JfO" firstAttribute="top" secondItem="tdy-Zf-PTc" secondAttribute="bottom" constant="50" id="SOe-S7-G1c"/>
+                            <constraint firstItem="g7o-5P-PbB" firstAttribute="width" secondItem="yMQ-Rr-mkf" secondAttribute="width" multiplier="0.6" id="XVw-pG-l77"/>
+                            <constraint firstItem="M0Q-PG-JfO" firstAttribute="centerX" secondItem="yMQ-Rr-mkf" secondAttribute="centerX" id="j50-pO-HVJ"/>
+                            <constraint firstItem="52D-bG-fvT" firstAttribute="top" secondItem="SO4-co-QR6" secondAttribute="bottom" id="pnl-HD-Epk"/>
+                            <constraint firstItem="SO4-co-QR6" firstAttribute="top" secondItem="tdy-Zf-PTc" secondAttribute="bottom" id="zOY-6E-mIU"/>
+                            <constraint firstItem="M0Q-PG-JfO" firstAttribute="height" secondItem="yMQ-Rr-mkf" secondAttribute="height" multiplier="0.15" id="ziV-kq-Ejd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="nf7-WZ-a6E"/>
+                    <connections>
+                        <outlet property="imageViewBackground" destination="SO4-co-QR6" id="Ppo-4f-Mze"/>
+                        <outlet property="imageViewProfile" destination="M0Q-PG-JfO" id="5DX-dG-oev"/>
+                        <outlet property="textFieldName" destination="g7o-5P-PbB" id="yRZ-ES-Xj7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IPn-TD-Xpe" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cDP-On-Rnx">
+                    <connections>
+                        <action selector="handleTap:" destination="Af3-Zv-yFs" id="oFB-U7-nYt"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iss-cQ-iZx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fhX-a3-zu8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vl4-QJ-1AR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Af3-Zv-yFs" kind="relationship" relationship="rootViewController" id="ifH-yC-9gi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EnP-if-JTZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.199999999999999" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="defaultProfileImage" width="600" height="600"/>
+        <image name="moon" width="375" height="667"/>
+    </resources>
+</document>
