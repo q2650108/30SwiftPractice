@@ -383,6 +383,18 @@ what did i learn from this practice ?
  * ImagePickerTrayController (2017/02/02 Still WIP)
 
 ```
+### Project 30 - [WikiFace](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2030%20-%20WikiFace)
+
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2030%20-%20WikiFace/30_1.gif?raw=true)
+<br />
+
+```
+what did i learn from this practice ? 
+
+ * URLSession
+ * Some Wiki API
+
+```
 ### Project 31 - [ImitateTheIMLayout](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2031%20-%20ImitateTheIMLayout)
 
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2031%20-%20ImitateTheIMLayout/31_1.gif?raw=true)
