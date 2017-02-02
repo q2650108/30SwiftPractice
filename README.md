@@ -277,8 +277,7 @@ The Project 19 is the same as the Project 07.
 ```
 what did i learn from this practice ? 
 
- * NotificationCenter
- * UITextFieldDelegate - shouldChangeCharactersIn
+ * UICollectionViewController 
 
 ```
 ### Project 21 - [SwipeableCell](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2021%20-%20SwipeableCell)
