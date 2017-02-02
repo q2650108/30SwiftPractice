@@ -316,11 +316,11 @@ what did i learn from this practice ?
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2024%20-%20MosaicLayout/24_1.gif?raw=true)
 ![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2024%20-%20MosaicLayout/24_2.gif?raw=true)
 <br />
-
+<br />
+[▶︎MosaicLayout GitHub◀︎](https://github.com/betzerra/MosaicLayout)
 ```
 what did i learn from this practice ? 
 
- * NotificationCenter
  * FMMosaicLayout
 
 ```
