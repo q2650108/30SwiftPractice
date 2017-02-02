@@ -373,7 +373,7 @@ what did i learn from this practice ?
 ```
 ### Project 29 - [iMessageImagePicker](https://github.com/q2650108/30SwiftPractice/tree/master/Project%2029%20-%20iMessageImagePicker)
 
-![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2029%20-%20iMessageImagePicker/29_2.gif?raw=true)
+![Alt text](https://github.com/q2650108/30SwiftPractice/blob/master/Project%2029%20-%20iMessageImagePicker/29_1.gif?raw=true)
 <br />
 <br />
 [▶︎ImagePickerTrayController GitHub◀︎](https://github.com/lbrndnr/ImagePickerTrayController)
