@@ -289,8 +289,7 @@ what did i learn from this practice ?
 ```
 what did i learn from this practice ? 
 
- * NotificationCenter
- * UITextFieldDelegate - shouldChangeCharactersIn
+ * UITableViewRowAction
 
 ```
 ### Project 22 - [3DTouchQuickAction] [Reference](http://stackoverflow.com/questions/32491188/simulate-force-touch-3d-touch-on-iphone-6s-or-iphone-6s-plus-simulators)
